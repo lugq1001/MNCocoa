@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		313613A71FEA2BCC00031EA8 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		313613A71FEA2BCC00031EA8 /* mn_cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mn_cocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		313613B31FEA2BF700031EA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		313613B51FEA2C1B00031EA8 /* MNCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCocoa.swift; sourceTree = "<group>"; };
 		313613BF1FEA2D3900031EA8 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		313613A81FEA2BCC00031EA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				313613A71FEA2BCC00031EA8 /* MNCocoa.framework */,
+				313613A71FEA2BCC00031EA8 /* mn_cocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,9 +123,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		313613A61FEA2BCC00031EA8 /* MNCocoa */ = {
+		313613A61FEA2BCC00031EA8 /* mn-cocoa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 313613AF1FEA2BCC00031EA8 /* Build configuration list for PBXNativeTarget "MNCocoa" */;
+			buildConfigurationList = 313613AF1FEA2BCC00031EA8 /* Build configuration list for PBXNativeTarget "mn-cocoa" */;
 			buildPhases = (
 				313613A21FEA2BCC00031EA8 /* Sources */,
 				313613A31FEA2BCC00031EA8 /* Frameworks */,
@@ -136,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = MNCocoa;
+			name = "mn-cocoa";
 			productName = MNCocoa;
-			productReference = 313613A71FEA2BCC00031EA8 /* MNCocoa.framework */;
+			productReference = 313613A71FEA2BCC00031EA8 /* mn_cocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 313613A11FEA2BCC00031EA8 /* Build configuration list for PBXProject "MNCocoa" */;
+			buildConfigurationList = 313613A11FEA2BCC00031EA8 /* Build configuration list for PBXProject "mn-cocoa" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				313613A61FEA2BCC00031EA8 /* MNCocoa */,
+				313613A61FEA2BCC00031EA8 /* mn-cocoa */,
 			);
 		};
 /* End PBXProject section */
@@ -372,7 +372,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		313613A11FEA2BCC00031EA8 /* Build configuration list for PBXProject "MNCocoa" */ = {
+		313613A11FEA2BCC00031EA8 /* Build configuration list for PBXProject "mn-cocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				313613AD1FEA2BCC00031EA8 /* Debug */,
@@ -381,7 +381,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		313613AF1FEA2BCC00031EA8 /* Build configuration list for PBXNativeTarget "MNCocoa" */ = {
+		313613AF1FEA2BCC00031EA8 /* Build configuration list for PBXNativeTarget "mn-cocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				313613B01FEA2BCC00031EA8 /* Debug */,

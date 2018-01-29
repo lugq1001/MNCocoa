@@ -93,12 +93,21 @@ github "ReactiveX/RxSwift" ~> 4.0
 # https://github.com/Moya/Moya
 github "Moya/Moya"
 
+# https://github.com/mxcl/PromiseKit
+github "mxcl/PromiseKit" ~> 4.4
+
 # 软键盘管理
 # https://github.com/hackiftekhar/IQKeyboardManager
 github "hackiftekhar/IQKeyboardManager"
 
 github "patchthecode/JTAppleCalendar" ~> 7.0
 
+
+# https://github.com/airbnb/lottie-ios
+github "airbnb/lottie-ios" "master"
+
+# https://github.com/scalessec/Toast-Swift
+github "scalessec/Toast-Swift" ~> 3.0.1
 
 #解决IOS11提交ipa报错的carthage bug
 # carthage update --platform iOS --no-use-binaries --no-build

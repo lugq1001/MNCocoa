@@ -1,6 +1,6 @@
 //
 //  Path.swift
-//  mn_cocoa
+//  MNCocoa_macOS
 //
 //  Created by 陆广庆 on 2017/12/20.
 //  Copyright © 2017年 陆广庆. All rights reserved.
@@ -83,7 +83,12 @@ public extension Path {
     }
     
     public var mn_bookmarkData: Data? {
-        return try? url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+        #if os(OSX)
+            return try? url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
+        #elseif os(iOS)
+            return nil
+        #endif
+        
     }
     
     
@@ -92,10 +97,14 @@ public extension Path {
 extension Data {
     
     public var mn_bookmarkURL: URL? {
-        var isStale = false
-        if let url = try? URL.init(resolvingBookmarkData: self, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale) {
-            return url
-        }
+        #if os(OSX)
+            var isStale = false
+            if let url = try? URL.init(resolvingBookmarkData: self, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale) {
+                return url
+            }
+        #elseif os(iOS)
+
+        #endif
         return nil
     }
     

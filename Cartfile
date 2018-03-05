@@ -109,6 +109,7 @@ github "airbnb/lottie-ios" "master"
 # https://github.com/scalessec/Toast-Swift
 github "scalessec/Toast-Swift" ~> 3.0.1
 
+
 #解决IOS11提交ipa报错的carthage bug
 # carthage update --platform iOS --no-use-binaries --no-build
 # grep -lR "codeCoverageEnabled" --include *.xcscheme --null Carthage | xargs -0 sed -i '' -e 's/codeCoverageEnabled = "YES"/codeCoverageEnabled = "NO"/g'

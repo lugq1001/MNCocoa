@@ -111,6 +111,7 @@ github "scalessec/Toast-Swift" ~> 3.0.1
 
 github "apple/swift-protobuf" ~> 1.0
 
+github "scinfu/SwiftSoup"
 
 #解决IOS11提交ipa报错的carthage bug
 # carthage update --platform iOS --no-use-binaries --no-build

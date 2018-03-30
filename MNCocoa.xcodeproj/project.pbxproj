@@ -7,39 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		310D605B2020489000559F7D /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248E2200B4C1C00B67A6C /* MNDate.swift */; };
-		310D605C2020489000559F7D /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248DE200B4BAE00B67A6C /* MNApplication.swift */; };
-		310D605D2020489000559F7D /* MNString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248E0200B4BEC00B67A6C /* MNString.swift */; };
-		310D605E2020489000559F7D /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248E2200B4C1C00B67A6C /* MNDate.swift */; };
-		310D605F2020489000559F7D /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248DE200B4BAE00B67A6C /* MNApplication.swift */; };
-		310D60602020489000559F7D /* MNString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319248E0200B4BEC00B67A6C /* MNString.swift */; };
-		310D60612020489400559F7D /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613CA1FEA2EBD00031EA8 /* MNMimeType.swift */; };
-		310D60622020489400559F7D /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613CB1FEA2EBD00031EA8 /* MNMimeType+Resolve.swift */; };
-		310D60632020489400559F7D /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613CA1FEA2EBD00031EA8 /* MNMimeType.swift */; };
-		310D60642020489400559F7D /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613CB1FEA2EBD00031EA8 /* MNMimeType+Resolve.swift */; };
-		310D60652020489800559F7D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613BF1FEA2D3900031EA8 /* Image.swift */; };
-		310D60662020489800559F7D /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613C71FEA2E1400031EA8 /* Path.swift */; };
-		310D60682020489800559F7D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613BF1FEA2D3900031EA8 /* Image.swift */; };
-		310D60692020489800559F7D /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313613C71FEA2E1400031EA8 /* Path.swift */; };
-		31C62C172020072900AEB0C5 /* MNCocoa_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C62C152020072900AEB0C5 /* MNCocoa_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31C62C242020073A00AEB0C5 /* MNCocoa_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C62C222020073A00AEB0C5 /* MNCocoa_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310B2FA2206E2F6C0020B2D1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F99206E2F6C0020B2D1 /* Image.swift */; };
+		310B2FA3206E2F6C0020B2D1 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9A206E2F6C0020B2D1 /* Path.swift */; };
+		310B2FA4206E2F6C0020B2D1 /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */; };
+		310B2FA5206E2F6C0020B2D1 /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */; };
+		310B2FA6206E2F6C0020B2D1 /* MNString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9F206E2F6C0020B2D1 /* MNString.swift */; };
+		310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */; };
+		310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA1206E2F6C0020B2D1 /* MNDate.swift */; };
+		310B2FA9206E2F780020B2D1 /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B2F95206E2F670020B2D1 /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310B2F95206E2F670020B2D1 /* MNCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCocoa.h; sourceTree = "<group>"; };
+		310B2F96206E2F670020B2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310B2F99206E2F6C0020B2D1 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		310B2F9A206E2F6C0020B2D1 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNMimeType.swift; sourceTree = "<group>"; };
+		310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MNMimeType+Resolve.swift"; sourceTree = "<group>"; };
+		310B2F9F206E2F6C0020B2D1 /* MNString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNString.swift; sourceTree = "<group>"; };
+		310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNApplication.swift; sourceTree = "<group>"; };
+		310B2FA1206E2F6C0020B2D1 /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		313613BF1FEA2D3900031EA8 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		313613C71FEA2E1400031EA8 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		313613CA1FEA2EBD00031EA8 /* MNMimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNMimeType.swift; sourceTree = "<group>"; };
-		313613CB1FEA2EBD00031EA8 /* MNMimeType+Resolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MNMimeType+Resolve.swift"; sourceTree = "<group>"; };
-		319248DE200B4BAE00B67A6C /* MNApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNApplication.swift; sourceTree = "<group>"; };
-		319248E0200B4BEC00B67A6C /* MNString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNString.swift; sourceTree = "<group>"; };
-		319248E2200B4C1C00B67A6C /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
-		31C62C132020072900AEB0C5 /* MNCocoa_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C62C152020072900AEB0C5 /* MNCocoa_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCocoa_iOS.h; sourceTree = "<group>"; };
-		31C62C162020072900AEB0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31C62C202020073A00AEB0C5 /* MNCocoa_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C62C222020073A00AEB0C5 /* MNCocoa_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCocoa_macOS.h; sourceTree = "<group>"; };
-		31C62C232020073A00AEB0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,22 +39,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31C62C1C2020073A00AEB0C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310B2F94206E2F670020B2D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				310B2F95206E2F670020B2D1 /* MNCocoa.h */,
+				310B2F96206E2F670020B2D1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		310B2F97206E2F6C0020B2D1 /* MNCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				310B2F98206E2F6C0020B2D1 /* Extension */,
+				310B2F9B206E2F6C0020B2D1 /* Util */,
+				310B2F9E206E2F6C0020B2D1 /* Lang */,
+			);
+			path = MNCocoa;
+			sourceTree = "<group>";
+		};
+		310B2F98206E2F6C0020B2D1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				310B2F99206E2F6C0020B2D1 /* Image.swift */,
+				310B2F9A206E2F6C0020B2D1 /* Path.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		310B2F9B206E2F6C0020B2D1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */,
+				310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		310B2F9E206E2F6C0020B2D1 /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				310B2F9F206E2F6C0020B2D1 /* MNString.swift */,
+				310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */,
+				310B2FA1206E2F6C0020B2D1 /* MNDate.swift */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
 		3136139D1FEA2BCC00031EA8 = {
 			isa = PBXGroup;
 			children = (
 				313613A91FEA2BCC00031EA8 /* MNCocoa */,
-				31C62C142020072900AEB0C5 /* MNCocoa_iOS */,
-				31C62C212020073A00AEB0C5 /* MNCocoa_macOS */,
 				313613A81FEA2BCC00031EA8 /* Products */,
 				310D5F95201F2EFE00559F7D /* Cartfile */,
 			);
@@ -74,8 +101,7 @@
 		313613A81FEA2BCC00031EA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31C62C132020072900AEB0C5 /* MNCocoa_iOS.framework */,
-				31C62C202020073A00AEB0C5 /* MNCocoa_macOS.framework */,
+				31C62C132020072900AEB0C5 /* MNCocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,57 +117,10 @@
 		313613B21FEA2BF700031EA8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				319248DD200B4B9400B67A6C /* Lang */,
-				313613C91FEA2EA200031EA8 /* Util */,
-				313613BE1FEA2D1A00031EA8 /* Extension */,
+				310B2F97206E2F6C0020B2D1 /* MNCocoa */,
+				310B2F94206E2F670020B2D1 /* Supporting Files */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		313613BE1FEA2D1A00031EA8 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				313613BF1FEA2D3900031EA8 /* Image.swift */,
-				313613C71FEA2E1400031EA8 /* Path.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		313613C91FEA2EA200031EA8 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				313613CA1FEA2EBD00031EA8 /* MNMimeType.swift */,
-				313613CB1FEA2EBD00031EA8 /* MNMimeType+Resolve.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		319248DD200B4B9400B67A6C /* Lang */ = {
-			isa = PBXGroup;
-			children = (
-				319248E2200B4C1C00B67A6C /* MNDate.swift */,
-				319248DE200B4BAE00B67A6C /* MNApplication.swift */,
-				319248E0200B4BEC00B67A6C /* MNString.swift */,
-			);
-			path = Lang;
-			sourceTree = "<group>";
-		};
-		31C62C142020072900AEB0C5 /* MNCocoa_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				31C62C152020072900AEB0C5 /* MNCocoa_iOS.h */,
-				31C62C162020072900AEB0C5 /* Info.plist */,
-			);
-			path = MNCocoa_iOS;
-			sourceTree = "<group>";
-		};
-		31C62C212020073A00AEB0C5 /* MNCocoa_macOS */ = {
-			isa = PBXGroup;
-			children = (
-				31C62C222020073A00AEB0C5 /* MNCocoa_macOS.h */,
-				31C62C232020073A00AEB0C5 /* Info.plist */,
-			);
-			path = MNCocoa_macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,24 +130,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31C62C172020072900AEB0C5 /* MNCocoa_iOS.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31C62C1D2020073A00AEB0C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31C62C242020073A00AEB0C5 /* MNCocoa_macOS.h in Headers */,
+				310B2FA9206E2F780020B2D1 /* MNCocoa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		31C62C122020072900AEB0C5 /* MNCocoa_iOS */ = {
+		31C62C122020072900AEB0C5 /* MNCocoa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31C62C1A2020072900AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa_iOS" */;
+			buildConfigurationList = 31C62C1A2020072900AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa" */;
 			buildPhases = (
 				31C62C0E2020072900AEB0C5 /* Sources */,
 				31C62C0F2020072900AEB0C5 /* Frameworks */,
@@ -179,27 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = MNCocoa_iOS;
+			name = MNCocoa;
 			productName = MNCocoa_iOS;
-			productReference = 31C62C132020072900AEB0C5 /* MNCocoa_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		31C62C1F2020073A00AEB0C5 /* MNCocoa_macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 31C62C252020073A00AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa_macOS" */;
-			buildPhases = (
-				31C62C1B2020073A00AEB0C5 /* Sources */,
-				31C62C1C2020073A00AEB0C5 /* Frameworks */,
-				31C62C1D2020073A00AEB0C5 /* Headers */,
-				31C62C1E2020073A00AEB0C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MNCocoa_macOS;
-			productName = MNCocoa_macOS;
-			productReference = 31C62C202020073A00AEB0C5 /* MNCocoa_macOS.framework */;
+			productReference = 31C62C132020072900AEB0C5 /* MNCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -208,14 +161,10 @@
 		3136139E1FEA2BCC00031EA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "陆广庆";
 				TargetAttributes = {
 					31C62C122020072900AEB0C5 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					31C62C1F2020073A00AEB0C5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -233,21 +182,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31C62C122020072900AEB0C5 /* MNCocoa_iOS */,
-				31C62C1F2020073A00AEB0C5 /* MNCocoa_macOS */,
+				31C62C122020072900AEB0C5 /* MNCocoa */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		31C62C112020072900AEB0C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31C62C1E2020073A00AEB0C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,27 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310D60612020489400559F7D /* MNMimeType.swift in Sources */,
-				310D60662020489800559F7D /* Path.swift in Sources */,
-				310D60652020489800559F7D /* Image.swift in Sources */,
-				310D605B2020489000559F7D /* MNDate.swift in Sources */,
-				310D60622020489400559F7D /* MNMimeType+Resolve.swift in Sources */,
-				310D605C2020489000559F7D /* MNApplication.swift in Sources */,
-				310D605D2020489000559F7D /* MNString.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31C62C1B2020073A00AEB0C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				310D60632020489400559F7D /* MNMimeType.swift in Sources */,
-				310D60692020489800559F7D /* Path.swift in Sources */,
-				310D60682020489800559F7D /* Image.swift in Sources */,
-				310D605E2020489000559F7D /* MNDate.swift in Sources */,
-				310D60642020489400559F7D /* MNMimeType+Resolve.swift in Sources */,
-				310D605F2020489000559F7D /* MNApplication.swift in Sources */,
-				310D60602020489000559F7D /* MNString.swift in Sources */,
+				310B2FA6206E2F6C0020B2D1 /* MNString.swift in Sources */,
+				310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */,
+				310B2FA3206E2F6C0020B2D1 /* Path.swift in Sources */,
+				310B2FA4206E2F6C0020B2D1 /* MNMimeType.swift in Sources */,
+				310B2FA2206E2F6C0020B2D1 /* Image.swift in Sources */,
+				310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */,
+				310B2FA5206E2F6C0020B2D1 /* MNMimeType+Resolve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +229,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -309,6 +237,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -363,6 +292,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -370,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -405,7 +336,7 @@
 		31C62C182020072900AEB0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RX6HV9CQ5K;
@@ -413,95 +344,66 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = MNCocoa_iOS/Info.plist;
+				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "$(SRCROOT)/MNCocoa/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lugq1001.MNCocoa-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
 		31C62C192020072900AEB0C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RX6HV9CQ5K;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = MNCocoa_iOS/Info.plist;
+				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "$(SRCROOT)/MNCocoa/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lugq1001.MNCocoa-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		31C62C262020073A00AEB0C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RX6HV9CQ5K;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = MNCocoa_macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lugq1001.MNCocoa-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		31C62C272020073A00AEB0C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = RX6HV9CQ5K;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = MNCocoa_macOS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lugq1001.MNCocoa-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
@@ -517,20 +419,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31C62C1A2020072900AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa_iOS" */ = {
+		31C62C1A2020072900AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31C62C182020072900AEB0C5 /* Debug */,
 				31C62C192020072900AEB0C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		31C62C252020073A00AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa_macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31C62C262020073A00AEB0C5 /* Debug */,
-				31C62C272020073A00AEB0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

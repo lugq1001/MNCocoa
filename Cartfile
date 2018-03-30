@@ -1,61 +1,36 @@
 
-###################### Lang ######################
-# https://github.com/ReactiveX/RxSwift
-github "ReactiveX/RxSwift" ~> 4.0
-
-# https://github.com/mxcl/PromiseKit
-# github "mxcl/PromiseKit" ~> 4.4
-
-# https://github.com/SwifterSwift/SwifterSwift
-github "SwifterSwift/SwifterSwift" ~> 4.0
-
-# https://github.com/marmelroy/Localize-Swift
-github "marmelroy/Localize-Swift"
-
-# https://github.com/malcommac/SwiftDate
-github "malcommac/SwiftDate" ~> 4.5.0
-
-# https://github.com/Ekhoo/Device
-github "Ekhoo/Device" ~> 3.0.3
-
-# https://github.com/krzyzanowskim/CryptoSwift
-github "krzyzanowskim/CryptoSwift"
-
-###################### Network ######################
-
+# Network
 # https://github.com/Alamofire/Alamofire
-github "Alamofire/Alamofire" ~> 4.7
+github "Alamofire/Alamofire" ~> 4.5
 
-# https://github.com/daltoniam/starscream
-github "daltoniam/Starscream" >= 3.0.2
+# Color
+# https://github.com/yannickl/DynamicColor
+github "yannickl/DynamicColor" >= 4.0.1
+
+# Store
+# https://github.com/JohnEstropia/CoreStore
+github "JohnEstropia/CoreStore" >= 4.0.0
 
 # https://github.com/SwiftyJSON/SwiftyJSON
 github "SwiftyJSON/SwiftyJSON"
 
-# https://github.com/Moya/Moya
-github "Moya/Moya"
-
-# https://github.com/apple/swift-protobuf
-github "apple/swift-protobuf" ~> 1.0
-
-###################### Store ######################
-
-# https://github.com/JohnEstropia/CoreStore
-github "JohnEstropia/CoreStore" >= 5.0.0
-
-###################### UI ######################
-
-# https://github.com/yannickl/DynamicColor
-github "yannickl/DynamicColor" >= 4.0.1
-
-# https://github.com/SnapKit/SnapKit
-github "SnapKit/SnapKit" ~> 4.0.0
+# https://github.com/jdg/MBProgressHUD
+github "jdg/MBProgressHUD" ~> 1.1.0
 
 # https://github.com/onevcat/Kingfisher
 github "onevcat/Kingfisher" ~> 4.0
 
-# https://github.com/gavinbunney/Toucan
-github "gavinbunney/Toucan"
+# https://github.com/krzyzanowskim/CryptoSwift
+github "krzyzanowskim/CryptoSwift"
+
+# https://github.com/evgenyneu/keychain-swift
+github "evgenyneu/keychain-swift" ~> 10.0
+
+# https://github.com/SnapKit/SnapKit
+github "SnapKit/SnapKit" ~> 4.0.0
+
+# https://github.com/marmelroy/Localize-Swift
+github "marmelroy/Localize-Swift"
 
 # https://github.com/muukii/ZoomImageView
 github "muukii/ZoomImageView"
@@ -63,11 +38,38 @@ github "muukii/ZoomImageView"
 # https://github.com/dekatotoro/SlideMenuControllerSwift
 github "dekatotoro/SlideMenuControllerSwift"
 
+# https://github.com/daltoniam/starscream
+github "daltoniam/Starscream" >= 3.0.2
+
+# https://github.com/DaveWoodCom/XCGLogger
+github "DaveWoodCom/XCGLogger" ~> 6.0.2
+
+# refresh
 # https://github.com/eggswift/pull-to-refresh
 github "eggswift/pull-to-refresh"
 
+# https://github.com/gavinbunney/Toucan
+github "gavinbunney/Toucan"
+
+# status tips
 # https://github.com/SwiftKickMobile/SwiftMessages
 github "SwiftKickMobile/SwiftMessages"
+
+# 文件管理
+# https://github.com/nvzqz/FileKit
+github "nvzqz/FileKit"
+
+# Device
+# https://github.com/Ekhoo/Device
+github "Ekhoo/Device" ~> 3.0.3
+
+# Swift extensions
+# https://github.com/SwifterSwift/SwifterSwift
+github "SwifterSwift/SwifterSwift" ~> 4.0
+
+# PDFGenerator
+# https://github.com/sgr-ksmt/PDFGenerator
+github "sgr-ksmt/PDFGenerator" ~> 2.1
 
 # https://github.com/ruslanskorb/RSKPlaceholderTextView
 github "ruslanskorb/RSKPlaceholderTextView"
@@ -75,20 +77,31 @@ github "ruslanskorb/RSKPlaceholderTextView"
 # https://github.com/raulriera/TextFieldEffects
 github "raulriera/TextFieldEffects"
 
+# Loading指示器
 # https://github.com/ninjaprox/NVActivityIndicatorView
 github "ninjaprox/NVActivityIndicatorView"
 
 # https://github.com/louisdh/panelkit
 github "louisdh/panelkit" ~> 1.0
 
+# https://github.com/malcommac/SwiftDate
+github "malcommac/SwiftDate" ~> 4.5.0
+
+# https://github.com/ReactiveX/RxSwift
+github "ReactiveX/RxSwift" ~> 4.0
+
+# https://github.com/Moya/Moya
+github "Moya/Moya"
+
+# https://github.com/mxcl/PromiseKit
+github "mxcl/PromiseKit" ~> 4.4
+
+# 软键盘管理
 # https://github.com/hackiftekhar/IQKeyboardManager
 github "hackiftekhar/IQKeyboardManager"
 
-# https://github.com/patchthecode/JTAppleCalendar
 github "patchthecode/JTAppleCalendar" ~> 7.0
 
-# https://github.com/jdg/MBProgressHUD
-github "jdg/MBProgressHUD" ~> 1.1.0
 
 # https://github.com/airbnb/lottie-ios
 github "airbnb/lottie-ios" "master"
@@ -96,24 +109,9 @@ github "airbnb/lottie-ios" "master"
 # https://github.com/scalessec/Toast-Swift
 github "scalessec/Toast-Swift" ~> 3.0.1
 
-###################### Util ######################
+github "apple/swift-protobuf" ~> 1.0
 
-# https://github.com/evgenyneu/keychain-swift
-github "evgenyneu/keychain-swift" ~> 10.0
-
-# https://github.com/DaveWoodCom/XCGLogger
-github "DaveWoodCom/XCGLogger" ~> 6.0.2
-
-# https://github.com/nvzqz/FileKit
-github "nvzqz/FileKit"
-
-# https://github.com/sgr-ksmt/PDFGenerator
-github "sgr-ksmt/PDFGenerator" ~> 2.1
-
-###################### HTML ######################
-# https://github.com/scinfu/SwiftSoup
 github "scinfu/SwiftSoup"
-
 
 #解决IOS11提交ipa报错的carthage bug
 # carthage update --platform iOS --no-use-binaries --no-build

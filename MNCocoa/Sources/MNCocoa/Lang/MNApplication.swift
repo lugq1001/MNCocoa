@@ -21,7 +21,7 @@ public struct MNApplication {
         }
         return ""
     }
-    
+
     public static var bundleVersion: String {
         let dict = infoDict
         if let versionString = dict["CFBundleVersion"], let version = versionString as? String {
@@ -33,13 +33,12 @@ public struct MNApplication {
     public static var bundleId: String {
         return Bundle.main.bundleIdentifier ?? ""
     }
-    
+
     public static var infoDict: [String: Any] {
         if let info = Bundle.main.infoDictionary {
             return info
         }
         return [:]
     }
-    
-    
+
 }

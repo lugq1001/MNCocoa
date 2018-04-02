@@ -7,24 +7,24 @@
 //
 
 #if os(OSX)
-    import Cocoa
+import Cocoa
 #elseif os(iOS)
-    import UIKit
+import UIKit
 #endif
 
-fileprivate let kMimeTypeGoogleDoc = "application/vnd.google-apps.document"
-fileprivate let kMimeTypeGoogleSheet = "application/vnd.google-apps.spreadsheet"
-fileprivate let kMimeTypeGooglePresentation = "application/vnd.google-apps.presentation"
-fileprivate let kMimeTypeGoogleDrawing = "application/vnd.google-apps.drawing"
-fileprivate let kMimeTypeGoogleForm = "application/vnd.google-apps.form"
-fileprivate let kMimeTypeGoogleScript = "application/vnd.google-apps.script"
+private let kMimeTypeGoogleDoc = "application/vnd.google-apps.document"
+private let kMimeTypeGoogleSheet = "application/vnd.google-apps.spreadsheet"
+private let kMimeTypeGooglePresentation = "application/vnd.google-apps.presentation"
+private let kMimeTypeGoogleDrawing = "application/vnd.google-apps.drawing"
+private let kMimeTypeGoogleForm = "application/vnd.google-apps.form"
+private let kMimeTypeGoogleScript = "application/vnd.google-apps.script"
 
 public extension MNMimeType {
-    
+
     /// 解析mimeType
     public mutating func resolve() {
         let mime = mimeType.lowercased()
-        for (k, v) in SupportMimeTypes {
+        for (k, v) in supportMimeTypes {
             if mime.hasPrefix(k) {
                 canPreview = true
                 ext = v
@@ -39,24 +39,23 @@ public extension MNMimeType {
                 ext = "data"
             }
         }
-        
-        // 分类
-        if mimeType == "application/octet-stream" {
+        switch mimeType {
+        case "application/octet-stream":
             category = .octetstream
-            return
-        }
-        if mimeType == "application/vnd.google-apps.folder" {
+        case "application/vnd.google-apps.folder":
             category = .gfolder
-            return
-        }
-        if mimeType == "application/pdf" {
+        case "application/pdf":
             category = .pdf
-            return
-        }
-        if mimeType == "text/html" {
+        case "text/html":
             category = .html
-            return
+        default:
+            break
         }
+        checkGoogleMimeType()
+        checkMediaType()
+    }
+
+    private mutating func checkGoogleMimeType() {
         if [kMimeTypeGoogleDoc,
             "application/msword",
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].contains(mimeType) {
@@ -75,6 +74,9 @@ public extension MNMimeType {
             category = .slides
             return
         }
+    }
+
+    private mutating func checkMediaType() {
         if mimeType.hasPrefix("image") || mimeType == kMimeTypeGoogleDrawing {
             category = .image
             return
@@ -94,16 +96,14 @@ public extension MNMimeType {
     }
 }
 
+private let supportMimeTypes = [
 
-
-fileprivate let SupportMimeTypes = [
-    
     "text/csv" : "csv",
     "text/css" : "css",
     "text/html" : "html",
     "text/plain" : "txt",
     "text/xml" : "xml",
-    
+
     "application/json" : "json",
     "audio/mp3" : "mp3",
     "audio/x-aac" : "aac",
@@ -114,7 +114,7 @@ fileprivate let SupportMimeTypes = [
     "video/quicktime" : "qt",
     "video/mp4" : "mp4",
     "video/mpeg" : "m2v",
-    
+
     "image/gif" : "gif",
     "image/x-icon" : "icom",
     "image/jpeg" : "jpeg",
@@ -122,20 +122,20 @@ fileprivate let SupportMimeTypes = [
     "image/png" : "png",
     "image/svg+xml" : "svg",
     "image/tiff" : "tiff",
-    
+
     "application/postscript" : "ps",
     "application/javascript" : "js",
     "application/pdf" : "pdf",
     "application/xhtml+xml" : "xhtml",
     "application/rtf" : "rtf",
-    
+
     "application/msword" : "doc",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document" : "docx",
     "application/vnd.ms-powerpoint" : "ppt",
     "application/vnd.openxmlformats-officedocument.presentationml.presentation" : "pptx",
     "application/vnd.ms-excel" : "xls",
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" : "xlsx",
-    
+
     // google文件
     kMimeTypeGoogleDoc : "docx" ,
     kMimeTypeGoogleSheet : "xlsx",
@@ -143,17 +143,3 @@ fileprivate let SupportMimeTypes = [
     kMimeTypeGoogleDrawing : "png",
     kMimeTypeGoogleScript : "json"
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-

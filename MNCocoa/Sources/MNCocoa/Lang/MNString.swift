@@ -13,11 +13,11 @@
 #endif
 
 public extension String {
-    
+
     public var b64Encode: String {
         return Data(self.utf8).base64EncodedString()
     }
-    
+
     public var b64Decode: String? {
         guard let data = Data(base64Encoded: self) else { return nil }
         return String(data: data, encoding: .utf8)

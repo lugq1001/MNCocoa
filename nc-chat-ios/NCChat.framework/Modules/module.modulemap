@@ -1,0 +1,11 @@
+framework module NCChat {
+  umbrella header "NCChat.h"
+
+  export *
+  module * { export * }
+}
+
+module NCChat.Swift {
+    header "NCChat-Swift.h"
+    requires objc
+}

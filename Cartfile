@@ -33,7 +33,7 @@ github "daltoniam/Starscream" >= 3.0.2
 github "SwiftyJSON/SwiftyJSON"
 
 # https://github.com/Moya/Moya
-github "Moya/Moya" "xcode_9.3"
+github "Moya/Moya"
 
 # https://github.com/apple/swift-protobuf
 github "apple/swift-protobuf" ~> 1.0

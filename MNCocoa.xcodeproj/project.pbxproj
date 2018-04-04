@@ -15,6 +15,8 @@
 		310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */; };
 		310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA1206E2F6C0020B2D1 /* MNDate.swift */; };
 		310B2FA9206E2F780020B2D1 /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B2F95206E2F670020B2D1 /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		313A08A32073478900CA0D20 /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A08A22073478900CA0D20 /* WidgetUtils.swift */; };
+		317032C2207342860074A0BB /* PrivacyAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317032C1207342860074A0BB /* PrivacyAuthorize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNApplication.swift; sourceTree = "<group>"; };
 		310B2FA1206E2F6C0020B2D1 /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		313A08A22073478900CA0D20 /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
+		317032C1207342860074A0BB /* PrivacyAuthorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAuthorize.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,8 @@
 		310B2F97206E2F6C0020B2D1 /* MNCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				313A08A12073477100CA0D20 /* UIKit */,
+				317032C02073422A0074A0BB /* AppKit */,
 				310B2F98206E2F6C0020B2D1 /* Extension */,
 				310B2F9B206E2F6C0020B2D1 /* Util */,
 				310B2F9E206E2F6C0020B2D1 /* Lang */,
@@ -121,6 +127,22 @@
 				310B2F97206E2F6C0020B2D1 /* MNCocoa */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		313A08A12073477100CA0D20 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				313A08A22073478900CA0D20 /* WidgetUtils.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		317032C02073422A0074A0BB /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				317032C1207342860074A0BB /* PrivacyAuthorize.swift */,
+			);
+			path = AppKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +244,12 @@
 				310B2FA6206E2F6C0020B2D1 /* MNString.swift in Sources */,
 				310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */,
 				310B2FA3206E2F6C0020B2D1 /* Path.swift in Sources */,
+				313A08A32073478900CA0D20 /* WidgetUtils.swift in Sources */,
 				310B2FA4206E2F6C0020B2D1 /* MNMimeType.swift in Sources */,
 				310B2FA2206E2F6C0020B2D1 /* Image.swift in Sources */,
 				310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */,
 				310B2FA5206E2F6C0020B2D1 /* MNMimeType+Resolve.swift in Sources */,
+				317032C2207342860074A0BB /* PrivacyAuthorize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

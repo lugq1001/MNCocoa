@@ -11,6 +11,7 @@
 #elseif os(iOS)
     import UIKit
 #endif
+import CryptoSwift
 
 public extension String {
 
@@ -21,5 +22,9 @@ public extension String {
     public var b64Decode: String? {
         guard let data = Data(base64Encoded: self) else { return nil }
         return String(data: data, encoding: .utf8)
+    }
+
+    public var md5: String {
+        return self.md5()
     }
 }

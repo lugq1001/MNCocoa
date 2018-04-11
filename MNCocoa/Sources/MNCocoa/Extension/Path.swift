@@ -16,7 +16,7 @@ import FileKit
 public extension Path {
 
     /// 是否为文件
-    public var isRegularFile: Bool {
+    public var mnIsFile: Bool {
         if let type = self.fileType {
             return type == .regular
         }
@@ -24,21 +24,21 @@ public extension Path {
     }
 
     /// 是否为隐藏路径
-    public var isHide: Bool {
+    public var mnIsHidden: Bool {
         if self.fileName.hasPrefix(".") {
             return true
         }
-        if let isHide = try? url.resourceValues(forKeys: [.isHiddenKey]).isHidden {
-            return isHide ?? false
+        if let mnIsHidden = try? url.resourceValues(forKeys: [.isHiddenKey]).isHidden {
+            return mnIsHidden ?? false
         }
         return false
     }
 
-    public func childRegularFiles(includeHide: Bool) -> [Path] {
+    public func mnChildFiles(includeHide: Bool) -> [Path] {
         let children = self.children()
         var result: [Path] = []
-        for c in children where c.isRegularFile {
-            if c.isHide && !includeHide {
+        for c in children where c.mnIsFile {
+            if c.mnIsHidden && !includeHide {
                 continue
             }
             result.append(c)
@@ -53,7 +53,7 @@ public extension Path {
         return MNMimeType.UNKNOWN
     }
 
-    public var fileSize: Int {
+    public var size: Int {
         if let fileSize = self.attributes[FileAttributeKey.size] as? Int {
             return fileSize
         }
@@ -61,25 +61,25 @@ public extension Path {
     }
 
     /// 文件夹路径，不包含文件名
-    public var mnParent: Path {
+    public var mnParentFolderPath: Path {
         let folderPath = self.url.deletingLastPathComponent().path
         return Path(folderPath)
     }
 
     /// 文件修改标记
-    public var modifyTag: String {
+    public var mnModifyTag: String {
         let date = self.modificationDate ?? Date()
-        let tag = "\(self.fileSize)-\(date.timeIntervalSince1970)"
+        let tag = "\(self.size)-\(date.timeIntervalSince1970)"
         return tag
     }
 
     /// 文件大小 用于显示 如 12.32 M
-    public var fileDisplaySize: String {
-        let size = self.fileSize
-        return size.displayFileSize
+    public var mnDisplaySize: String {
+        let size = self.size
+        return size.mnDisplayFileSize
     }
 
-    public var bookmarkData: Data? {
+    public var mnBookmarkData: Data? {
         #if os(OSX)
             return try? url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
         #elseif os(iOS)
@@ -92,7 +92,7 @@ public extension Path {
 
 extension Data {
 
-    public var bookmarkURL: URL? {
+    public var mnBookmarkURL: URL? {
         #if os(OSX)
             var isStale = false
             if let url = try? URL.init(resolvingBookmarkData: self, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale) {
@@ -109,7 +109,7 @@ extension Data {
 extension Int {
 
     /// 文件大小 用于显示 如 12.32 M
-    public var displayFileSize: String {
+    public var mnDisplayFileSize: String {
         let doubleVal = Double(self)
         let kb: Double = 1024
         let mb: Double = kb * 1024

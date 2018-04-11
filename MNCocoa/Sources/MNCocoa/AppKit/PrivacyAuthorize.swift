@@ -6,7 +6,9 @@
 //  Copyright © 2018年 陆广庆. All rights reserved.
 //  权限管理工具类
 
-import UIKit
+#if os(OSX)
+import Cocoa
+#elseif os(iOS)
 import AVFoundation
 
 public enum PrivacyResult {
@@ -33,3 +35,5 @@ public class PrivacyAuthorize: NSObject {
         }
     }
 }
+#endif
+

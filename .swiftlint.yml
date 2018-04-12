@@ -6,6 +6,15 @@ opt_in_rules: # some rules are only opt-in
   - empty_count
   # Find all the available rules by running:
   # swiftlint rules
+disabled_rules: # rule identifiers to exclude from running
+  - force_try
+  - class_delegate_protocol
+  - function_parameter_count
+  - function_body_length
+  - todo
+  # - discarded_notification_center_observer
+  # - conditional_returns_on_newline
+
 included: # paths to include during linting. `--path` is ignored if present.
   - MNCocoa/Sources
 excluded: # paths to ignore during linting. Takes precedence over `included`.
@@ -19,23 +28,31 @@ force_try:
   severity: warning # explicitly
 # rules that have both warning and error levels, can set just the warning level
 # implicitly
-line_length: 150
+line_length: 300
 # they can set both implicitly with an array
 type_body_length:
-  - 300 # warning
-  - 400 # error
+  - 500 # warning
+  - 1000 # error
 # or they can set both explicitly
 file_length:
-  warning: 500
-  error: 1200
+  warning: 1000
+  error: 2000
 # naming rules can set warnings/errors for min_length and max_length
 # additionally they can set excluded names
 type_name:
   min_length: 4 # only warning
   max_length: # warning and error
-    warning: 40
-    error: 50
+    warning: 100
+    error: 200
   excluded: iPhone # excluded via string
+cyclomatic_complexity:
+  warning: 100
+  error: 200
+function_body_length:
+  min_length: 2 # only warning
+  max_length: # warning and error
+    warning: 100
+    error: 200
 identifier_name:
   min_length: # only min_length
     warning: 1

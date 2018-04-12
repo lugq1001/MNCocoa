@@ -69,11 +69,11 @@ public extension Date {
     public func add(_ seconds: Int = 0, minutes: Int = 0, hours: Int = 0, days: Int = 0, weeks: Int = 0, months: Int = 0, years: Int = 0) -> Date {
         let calendar = Calendar.current
         let version = floor(NSFoundationVersionNumber)
-        if (version <= NSFoundationVersionNumber10_9_2  ) {
+        if version <= NSFoundationVersionNumber10_9_2 {
             var component = DateComponents()
 
             (component as NSDateComponents).setValue(seconds, forComponent: .second)
-            var date : Date! = (calendar as NSCalendar).date(byAdding: component, to: self, options: [])!
+            var date: Date! = (calendar as NSCalendar).date(byAdding: component, to: self, options: [])!
             component = DateComponents()
             (component as NSDateComponents).setValue(minutes, forComponent: .minute)
             date = (calendar as NSCalendar).date(byAdding: component, to: date, options: [])!
@@ -100,7 +100,7 @@ public extension Date {
             return date
         }
 
-        var date : Date! = (calendar as NSCalendar).date(byAdding: .second, value: seconds, to: self, options: [])
+        var date: Date! = (calendar as NSCalendar).date(byAdding: .second, value: seconds, to: self, options: [])
         date = (calendar as NSCalendar).date(byAdding: .minute, value: minutes, to: date, options: [])
         date = (calendar as NSCalendar).date(byAdding: .day, value: days, to: date, options: [])
         date = (calendar as NSCalendar).date(byAdding: .hour, value: hours, to: date, options: [])
@@ -208,56 +208,56 @@ public extension Date {
     /**
      Date year
      */
-    public var year : Int {
+    public var year: Int {
         return getComponent(.year)
     }
 
     /**
      Date month
      */
-    public var month : Int {
+    public var month: Int {
         return getComponent(.month)
     }
 
     /**
      Date weekday
      */
-    public var weekday : Int {
+    public var weekday: Int {
         return getComponent(.weekday)
     }
 
     /**
      Date weekMonth
      */
-    public var weekMonth : Int {
+    public var weekMonth: Int {
         return getComponent(.weekOfMonth)
     }
 
     /**
      Date days
      */
-    public var days : Int {
+    public var days: Int {
         return getComponent(.day)
     }
 
     /**
      Date hours
      */
-    public var hours : Int {
+    public var hours: Int {
         return getComponent(.hour)
     }
 
     /**
      Date minuts
      */
-    public var minutes : Int {
+    public var minutes: Int {
         return getComponent(.minute)
     }
 
     /**
      Date seconds
      */
-    public var seconds : Int {
+    public var seconds: Int {
         return getComponent(.second)
     }
 
@@ -268,7 +268,7 @@ public extension Date {
      - returns: the value of the component
      */
 
-    public func getComponent (_ component : Calendar.Component) -> Int {
+    public func getComponent (_ component: Calendar.Component) -> Int {
         let calendar = Calendar.current
         let components = calendar.component(component, from: self)
         return components

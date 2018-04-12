@@ -117,15 +117,15 @@ extension Int {
         let sizeVal: Double
         let suffix: String
         let needFormat: Bool
-        if (doubleVal >= gb) {
+        if doubleVal >= gb {
             sizeVal = doubleVal / gb
             suffix = "GB"
             needFormat = true
-        } else if (doubleVal >= mb) {
+        } else if doubleVal >= mb {
             sizeVal = doubleVal / mb
             suffix = "M"
             needFormat = true
-        } else if (doubleVal >= kb) {
+        } else if doubleVal >= kb {
             sizeVal = doubleVal / kb
             suffix = "KB"
             needFormat = false

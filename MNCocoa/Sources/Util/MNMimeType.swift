@@ -13,7 +13,7 @@
 #endif
 
 public enum MNMimeTypeCategory {
-    
+
     case gfolder
     case image
     case video
@@ -26,45 +26,44 @@ public enum MNMimeTypeCategory {
     case html
     case octetstream
     case other
-    
+
 }
 
-
 public struct MNMimeType {
-    
+
     public var mimeType = MNMimeType.UNKNOWN
     public var canPreview = false
     public var ext = ""
     public var category = MNMimeTypeCategory.other
-    
+
     public static var `default`: MNMimeType {
         return MNMimeType(mimeType: MNMimeType.UNKNOWN)
     }
-    
+
     public static var gfolder: MNMimeType {
         return MNMimeType(mimeType: "application/vnd.google-apps.folder")
     }
-    
+
     public init(mimeType: String) {
         self.mimeType = mimeType
         self.resolve()
     }
-    
+
     public init(ext: String) {
         if let mime = MNMimeType.ExtMapper[ext] {
             self.mimeType = mime
         }
         self.resolve()
     }
-    
+
     public init(filePath: String) {
         let path = filePath as NSString
         let ext = path.pathExtension
         self.init(ext: ext)
     }
-    
+
     public static let UNKNOWN = "application/octet-stream"
-    
+
     public static let ExtMapper = [
         "html": "text/html",
         "htm": "text/html",
@@ -170,11 +169,5 @@ public struct MNMimeType {
         "wmv": "video/x-ms-wmv",
         "avi": "video/x-msvideo"
     ]
-    
+
 }
-
-
-
-
-
-

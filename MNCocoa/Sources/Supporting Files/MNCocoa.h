@@ -6,7 +6,7 @@
 //  Copyright © 2018年 陆广庆. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for MNCocoa.
 FOUNDATION_EXPORT double MNCocoaVersionNumber;

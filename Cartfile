@@ -22,7 +22,6 @@ github "Ekhoo/Device" ~> 3.0.3
 github "krzyzanowskim/CryptoSwift"
 
 ###################### Network ######################
-
 # https://github.com/Alamofire/Alamofire
 github "Alamofire/Alamofire" ~> 4.7
 
@@ -39,12 +38,10 @@ github "Moya/Moya"
 github "apple/swift-protobuf" ~> 1.0
 
 ###################### Store ######################
-
 # https://github.com/JohnEstropia/CoreStore
 github "JohnEstropia/CoreStore" >= 5.0.0
 
 ###################### UI ######################
-
 # https://github.com/yannickl/DynamicColor
 github "yannickl/DynamicColor" >= 4.0.1
 
@@ -97,7 +94,6 @@ github "airbnb/lottie-ios" "master"
 github "scalessec/Toast-Swift" ~> 3.0.1
 
 ###################### Util ######################
-
 # https://github.com/evgenyneu/keychain-swift
 github "evgenyneu/keychain-swift" ~> 10.0
 

@@ -110,6 +110,9 @@ github "sgr-ksmt/PDFGenerator" ~> 2.1
 # https://github.com/scinfu/SwiftSoup
 github "scinfu/SwiftSoup"
 
+###################### Video ######################
+# https://github.com/VeinGuo/VGPlayer
+github "VeinGuo/VGPlayer"
 
 #解决IOS11提交ipa报错的carthage bug
 # carthage update --platform iOS --no-use-binaries --no-build

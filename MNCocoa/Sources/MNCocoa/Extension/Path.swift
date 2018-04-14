@@ -106,6 +106,17 @@ extension Data {
 
 }
 
+extension URL {
+
+    public var fileName: String {
+        if let path = Path(url: self) {
+            return path.fileName
+        }
+        return ""
+    }
+
+}
+
 extension Int {
 
     /// 文件大小 用于显示 如 12.32 M

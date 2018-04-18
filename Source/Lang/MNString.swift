@@ -27,4 +27,24 @@ public extension String {
     public var md5: String {
         return self.md5()
     }
+
+    public var isEmail: Bool {
+        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let pred = NSPredicate(format: "SELF MATCHES %@", regEx)
+        return pred.evaluate(with: self)
+    }
+
+    public var urlEncoded: String {
+        if let escapedString = self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
+            return escapedString
+        }
+        return self
+    }
+
+    public var cgFloatValue: CGFloat {
+        guard let n = NumberFormatter().number(from: self) else {
+            return 0
+        }
+        return CGFloat(n.floatValue)
+    }
 }

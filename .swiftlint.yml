@@ -16,7 +16,7 @@ disabled_rules: # rule identifiers to exclude from running
   # - conditional_returns_on_newline
 
 included: # paths to include during linting. `--path` is ignored if present.
-  - MNCocoa/Sources
+  - Source
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods

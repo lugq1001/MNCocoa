@@ -32,7 +32,6 @@ github "onevcat/Kingfisher" ~> 4.0
 # https://github.com/gavinbunney/Toucan
 github "gavinbunney/Toucan"
 
-
 # carthage update --platform iOS --no-use-binaries
 
 

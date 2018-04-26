@@ -12,6 +12,8 @@ disabled_rules: # rule identifiers to exclude from running
   - function_parameter_count
   - function_body_length
   - todo
+  - trailing_whitespace # 空行Tab警告
+  - multiple_closures_with_trailing_closure # 多闭包参数警告
   # - discarded_notification_center_observer
   # - conditional_returns_on_newline
 

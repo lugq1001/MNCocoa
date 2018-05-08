@@ -35,7 +35,7 @@ public extension String {
     }
 
     public var urlEncoded: String {
-        if let escapedString = self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
+        if let escapedString = self.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) {
             return escapedString
         }
         return self

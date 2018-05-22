@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3189122220A0188300D18FF3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189122120A0188300D18FF3 /* UIApplication.swift */; };
+		31A74C5A20B4048600581F20 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A74C5920B4048600581F20 /* View.swift */; };
 		31CEAB64208723970018703F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB55208723970018703F /* Image.swift */; };
 		31CEAB65208723970018703F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB56208723970018703F /* Path.swift */; };
 		31CEAB66208723970018703F /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB58208723970018703F /* MNMimeType.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3189122120A0188300D18FF3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		31A74C5920B4048600581F20 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CEAB53208723970018703F /* MNCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCocoa.h; sourceTree = "<group>"; };
 		31CEAB55208723970018703F /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				31CEAB55208723970018703F /* Image.swift */,
 				31CEAB56208723970018703F /* Path.swift */,
 				3189122120A0188300D18FF3 /* UIApplication.swift */,
+				31A74C5920B4048600581F20 /* View.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				31CEAB64208723970018703F /* Image.swift in Sources */,
 				31CEAB67208723970018703F /* MNMimeType+Resolve.swift in Sources */,
 				3189122220A0188300D18FF3 /* UIApplication.swift in Sources */,
+				31A74C5A20B4048600581F20 /* View.swift in Sources */,
 				31CEAB69208723970018703F /* MNString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

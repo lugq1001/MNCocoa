@@ -166,7 +166,7 @@
 		3136139E1FEA2BCC00031EA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "陆广庆";
 				TargetAttributes = {
 					31C62C122020072900AEB0C5 = {
@@ -381,7 +381,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
@@ -415,7 +415,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";

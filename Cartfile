@@ -26,7 +26,7 @@ github "nvzqz/FileKit"
 # https://github.com/onevcat/Kingfisher
 github "onevcat/Kingfisher" ~> 4.0
 
-# https://github.com/gavinbunney/Toucan
+# https://github.com/gavinbunney/Toucanz
 github "gavinbunney/Toucan"
 
 # https://github.com/SnapKit/SnapKit

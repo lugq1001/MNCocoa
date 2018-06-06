@@ -23,9 +23,6 @@ github "DaveWoodCom/XCGLogger" ~> 6.0.2
 # https://github.com/nvzqz/FileKit
 github "nvzqz/FileKit"
 
-# https://github.com/onevcat/Kingfisher
-github "onevcat/Kingfisher" ~> 4.0
-
 # https://github.com/gavinbunney/Toucanz
 github "gavinbunney/Toucan"
 

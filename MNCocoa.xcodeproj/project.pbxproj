@@ -7,32 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		310B2FA2206E2F6C0020B2D1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F99206E2F6C0020B2D1 /* Image.swift */; };
-		310B2FA3206E2F6C0020B2D1 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9A206E2F6C0020B2D1 /* Path.swift */; };
-		310B2FA4206E2F6C0020B2D1 /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */; };
-		310B2FA5206E2F6C0020B2D1 /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */; };
-		310B2FA6206E2F6C0020B2D1 /* MNString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2F9F206E2F6C0020B2D1 /* MNString.swift */; };
-		310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */; };
-		310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B2FA1206E2F6C0020B2D1 /* MNDate.swift */; };
-		310B2FA9206E2F780020B2D1 /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B2F95206E2F670020B2D1 /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		313A08A32073478900CA0D20 /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A08A22073478900CA0D20 /* WidgetUtils.swift */; };
-		317032C2207342860074A0BB /* PrivacyAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317032C1207342860074A0BB /* PrivacyAuthorize.swift */; };
+		3189122220A0188300D18FF3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189122120A0188300D18FF3 /* UIApplication.swift */; };
+		31A74C5A20B4048600581F20 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A74C5920B4048600581F20 /* View.swift */; };
+		31CEAB64208723970018703F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB55208723970018703F /* Image.swift */; };
+		31CEAB65208723970018703F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB56208723970018703F /* Path.swift */; };
+		31CEAB66208723970018703F /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB58208723970018703F /* MNMimeType.swift */; };
+		31CEAB67208723970018703F /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB59208723970018703F /* MNMimeType+Resolve.swift */; };
+		31CEAB68208723970018703F /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5B208723970018703F /* WidgetUtils.swift */; };
+		31CEAB69208723970018703F /* MNString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5D208723970018703F /* MNString.swift */; };
+		31CEAB6A208723970018703F /* MNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5E208723970018703F /* MNApplication.swift */; };
+		31CEAB6B208723970018703F /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5F208723970018703F /* MNDate.swift */; };
+		31CEAB6C208723970018703F /* PrivacyAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB61208723970018703F /* PrivacyAuthorize.swift */; };
+		31CEAB6E208723AF0018703F /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CEAB53208723970018703F /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		310B2F95206E2F670020B2D1 /* MNCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCocoa.h; sourceTree = "<group>"; };
-		310B2F96206E2F670020B2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		310B2F99206E2F6C0020B2D1 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		310B2F9A206E2F6C0020B2D1 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNMimeType.swift; sourceTree = "<group>"; };
-		310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MNMimeType+Resolve.swift"; sourceTree = "<group>"; };
-		310B2F9F206E2F6C0020B2D1 /* MNString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNString.swift; sourceTree = "<group>"; };
-		310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNApplication.swift; sourceTree = "<group>"; };
-		310B2FA1206E2F6C0020B2D1 /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		313A08A22073478900CA0D20 /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
-		317032C1207342860074A0BB /* PrivacyAuthorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAuthorize.swift; sourceTree = "<group>"; };
+		3189122120A0188300D18FF3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		31A74C5920B4048600581F20 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31CEAB53208723970018703F /* MNCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCocoa.h; sourceTree = "<group>"; };
+		31CEAB55208723970018703F /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		31CEAB56208723970018703F /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		31CEAB58208723970018703F /* MNMimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNMimeType.swift; sourceTree = "<group>"; };
+		31CEAB59208723970018703F /* MNMimeType+Resolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MNMimeType+Resolve.swift"; sourceTree = "<group>"; };
+		31CEAB5B208723970018703F /* WidgetUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
+		31CEAB5D208723970018703F /* MNString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNString.swift; sourceTree = "<group>"; };
+		31CEAB5E208723970018703F /* MNApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNApplication.swift; sourceTree = "<group>"; };
+		31CEAB5F208723970018703F /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
+		31CEAB61208723970018703F /* PrivacyAuthorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyAuthorize.swift; sourceTree = "<group>"; };
+		31CEAB62208723970018703F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,59 +50,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		310B2F94206E2F670020B2D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				310B2F95206E2F670020B2D1 /* MNCocoa.h */,
-				310B2F96206E2F670020B2D1 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		310B2F97206E2F6C0020B2D1 /* MNCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				313A08A12073477100CA0D20 /* UIKit */,
-				317032C02073422A0074A0BB /* AppKit */,
-				310B2F98206E2F6C0020B2D1 /* Extension */,
-				310B2F9B206E2F6C0020B2D1 /* Util */,
-				310B2F9E206E2F6C0020B2D1 /* Lang */,
-			);
-			path = MNCocoa;
-			sourceTree = "<group>";
-		};
-		310B2F98206E2F6C0020B2D1 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				310B2F99206E2F6C0020B2D1 /* Image.swift */,
-				310B2F9A206E2F6C0020B2D1 /* Path.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		310B2F9B206E2F6C0020B2D1 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				310B2F9C206E2F6C0020B2D1 /* MNMimeType.swift */,
-				310B2F9D206E2F6C0020B2D1 /* MNMimeType+Resolve.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		310B2F9E206E2F6C0020B2D1 /* Lang */ = {
-			isa = PBXGroup;
-			children = (
-				310B2F9F206E2F6C0020B2D1 /* MNString.swift */,
-				310B2FA0206E2F6C0020B2D1 /* MNApplication.swift */,
-				310B2FA1206E2F6C0020B2D1 /* MNDate.swift */,
-			);
-			path = Lang;
-			sourceTree = "<group>";
-		};
 		3136139D1FEA2BCC00031EA8 = {
 			isa = PBXGroup;
 			children = (
-				313613A91FEA2BCC00031EA8 /* MNCocoa */,
+				31CEAB52208723970018703F /* Source */,
 				313613A81FEA2BCC00031EA8 /* Products */,
 				310D5F95201F2EFE00559F7D /* Cartfile */,
 			);
@@ -112,35 +67,62 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		313613A91FEA2BCC00031EA8 /* MNCocoa */ = {
+		31CEAB52208723970018703F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				313613B21FEA2BF700031EA8 /* Sources */,
+				31CEAB54208723970018703F /* Extension */,
+				31CEAB57208723970018703F /* Util */,
+				31CEAB5A208723970018703F /* UIKit */,
+				31CEAB5C208723970018703F /* Lang */,
+				31CEAB60208723970018703F /* AppKit */,
+				31CEAB53208723970018703F /* MNCocoa.h */,
+				31CEAB62208723970018703F /* Info.plist */,
 			);
-			path = MNCocoa;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		313613B21FEA2BF700031EA8 /* Sources */ = {
+		31CEAB54208723970018703F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				310B2F94206E2F670020B2D1 /* Supporting Files */,
-				310B2F97206E2F6C0020B2D1 /* MNCocoa */,
+				31CEAB55208723970018703F /* Image.swift */,
+				31CEAB56208723970018703F /* Path.swift */,
+				3189122120A0188300D18FF3 /* UIApplication.swift */,
+				31A74C5920B4048600581F20 /* View.swift */,
 			);
-			path = Sources;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		313A08A12073477100CA0D20 /* UIKit */ = {
+		31CEAB57208723970018703F /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				313A08A22073478900CA0D20 /* WidgetUtils.swift */,
+				31CEAB58208723970018703F /* MNMimeType.swift */,
+				31CEAB59208723970018703F /* MNMimeType+Resolve.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		31CEAB5A208723970018703F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				31CEAB5B208723970018703F /* WidgetUtils.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		317032C02073422A0074A0BB /* AppKit */ = {
+		31CEAB5C208723970018703F /* Lang */ = {
 			isa = PBXGroup;
 			children = (
-				317032C1207342860074A0BB /* PrivacyAuthorize.swift */,
+				31CEAB5D208723970018703F /* MNString.swift */,
+				31CEAB5E208723970018703F /* MNApplication.swift */,
+				31CEAB5F208723970018703F /* MNDate.swift */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
+		31CEAB60208723970018703F /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				31CEAB61208723970018703F /* PrivacyAuthorize.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -152,7 +134,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310B2FA9206E2F780020B2D1 /* MNCocoa.h in Headers */,
+				31CEAB6E208723AF0018703F /* MNCocoa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +166,7 @@
 		3136139E1FEA2BCC00031EA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "陆广庆";
 				TargetAttributes = {
 					31C62C122020072900AEB0C5 = {
@@ -241,15 +223,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310B2FA6206E2F6C0020B2D1 /* MNString.swift in Sources */,
-				310B2FA7206E2F6C0020B2D1 /* MNApplication.swift in Sources */,
-				310B2FA3206E2F6C0020B2D1 /* Path.swift in Sources */,
-				313A08A32073478900CA0D20 /* WidgetUtils.swift in Sources */,
-				310B2FA4206E2F6C0020B2D1 /* MNMimeType.swift in Sources */,
-				310B2FA2206E2F6C0020B2D1 /* Image.swift in Sources */,
-				310B2FA8206E2F6C0020B2D1 /* MNDate.swift in Sources */,
-				310B2FA5206E2F6C0020B2D1 /* MNMimeType+Resolve.swift in Sources */,
-				317032C2207342860074A0BB /* PrivacyAuthorize.swift in Sources */,
+				31CEAB6B208723970018703F /* MNDate.swift in Sources */,
+				31CEAB6C208723970018703F /* PrivacyAuthorize.swift in Sources */,
+				31CEAB65208723970018703F /* Path.swift in Sources */,
+				31CEAB66208723970018703F /* MNMimeType.swift in Sources */,
+				31CEAB68208723970018703F /* WidgetUtils.swift in Sources */,
+				31CEAB6A208723970018703F /* MNApplication.swift in Sources */,
+				31CEAB64208723970018703F /* Image.swift in Sources */,
+				31CEAB67208723970018703F /* MNMimeType+Resolve.swift in Sources */,
+				3189122220A0188300D18FF3 /* UIApplication.swift in Sources */,
+				31A74C5A20B4048600581F20 /* View.swift in Sources */,
+				31CEAB69208723970018703F /* MNString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,13 +370,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
-				INFOPLIST_FILE = "$(SRCROOT)/MNCocoa/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,7 +381,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
@@ -423,13 +404,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
-				INFOPLIST_FILE = "$(SRCROOT)/MNCocoa/Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -437,7 +415,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx10.13;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";

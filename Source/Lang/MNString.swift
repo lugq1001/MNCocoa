@@ -40,11 +40,12 @@ public extension String {
         }
         return self
     }
-
+ 
     public var cgFloatValue: CGFloat {
         guard let n = NumberFormatter().number(from: self) else {
             return 0
         }
         return CGFloat(n.floatValue)
     }
+ 
 }

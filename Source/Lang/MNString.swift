@@ -40,6 +40,16 @@ public extension String {
         }
         return self
     }
+    
+    public var isValidHttpUrl: Bool {
+        guard let url = URL(string: self) else { return false }
+        return url.scheme == "http"
+    }
+    
+    public var isValidHttpsUrl: Bool {
+        guard let url = URL(string: self) else { return false }
+        return url.scheme == "https"
+    }
  
     public var cgFloatValue: CGFloat {
         guard let n = NumberFormatter().number(from: self) else {
@@ -47,5 +57,25 @@ public extension String {
         }
         return CGFloat(n.floatValue)
     }
+    
+    public var pathExtension: String {
+        return (self as NSString).pathExtension
+    }
+    
+    public var deletingPathExtension: String {
+        return (self as NSString).deletingPathExtension
+    }
+    
+    public var trimmed: String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
  
+    public func appendingPathComponent(_ str: String) -> String {
+        return (self as NSString).appendingPathComponent(str)
+    }
+    
+    public var firstCharacterAsString: String? {
+        guard let first = self.first else { return nil }
+        return String(first)
+    }
 }

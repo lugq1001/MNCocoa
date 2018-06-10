@@ -19,6 +19,7 @@
 		31CEAB6B208723970018703F /* MNDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5F208723970018703F /* MNDate.swift */; };
 		31CEAB6C208723970018703F /* PrivacyAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB61208723970018703F /* PrivacyAuthorize.swift */; };
 		31CEAB6E208723AF0018703F /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CEAB53208723970018703F /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E095AC20CC10B30030C78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E095AB20CC10B30030C78E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		31CEAB5F208723970018703F /* MNDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNDate.swift; sourceTree = "<group>"; };
 		31CEAB61208723970018703F /* PrivacyAuthorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyAuthorize.swift; sourceTree = "<group>"; };
 		31CEAB62208723970018703F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E095AB20CC10B30030C78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				31CEAB56208723970018703F /* Path.swift */,
 				3189122120A0188300D18FF3 /* UIApplication.swift */,
 				31A74C5920B4048600581F20 /* View.swift */,
+				31E095AB20CC10B30030C78E /* ViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				31CEAB66208723970018703F /* MNMimeType.swift in Sources */,
 				31CEAB68208723970018703F /* WidgetUtils.swift in Sources */,
 				31CEAB6A208723970018703F /* MNApplication.swift in Sources */,
+				31E095AC20CC10B30030C78E /* ViewController.swift in Sources */,
 				31CEAB64208723970018703F /* Image.swift in Sources */,
 				31CEAB67208723970018703F /* MNMimeType+Resolve.swift in Sources */,
 				3189122220A0188300D18FF3 /* UIApplication.swift in Sources */,

@@ -78,4 +78,10 @@ public extension String {
         guard let first = self.first else { return nil }
         return String(first)
     }
+    
+    public var base64Decoded: String? {
+        // https://github.com/Reza-Rg/Base64-Swift-Extension/blob/master/Base64.swift
+        guard let decodedData = Data(base64Encoded: self) else { return nil }
+        return String(data: decodedData, encoding: .utf8)
+    }
 }

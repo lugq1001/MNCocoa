@@ -6,8 +6,11 @@
 //  Copyright © 2018年 陆广庆. All rights reserved.
 //
 
-import UIKit
+#if os(OSX)
+import Cocoa
 
+#elseif os(iOS)
+import UIKit
 extension UIView {
     
     public var width: CGFloat {
@@ -31,11 +34,13 @@ extension UIView {
             return UIEdgeInsets.zero
         }
     }
-    
+}
+#endif
+
 //    var safeArea: ConstraintBasicAttributesDSL {
 //        if #available(iOS 11.0, *) {
 //            return self.safeAreaLayoutGuide.snp
 //        }
 //        return self.snp
 //    }
-}
+//}

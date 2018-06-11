@@ -15,6 +15,10 @@ import CryptoSwift
 
 public extension String {
 
+    public var intValue: Int? {
+        return Int(self)
+    }
+    
     public var b64Encode: String {
         return Data(self.utf8).base64EncodedString()
     }

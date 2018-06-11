@@ -6,12 +6,16 @@
 //  Copyright © 2018年 陆广庆. All rights reserved.
 //
 
+#if os(OSX)
+import Cocoa
+#elseif os(iOS)
 import UIKit
+#endif
 
 public struct MNCocoa {
-
+    
     public static var ver: String {
-        return UIApplication.appVersion
+        return Application.appVersion
     }
     
 }

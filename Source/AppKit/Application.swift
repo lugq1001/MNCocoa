@@ -7,22 +7,34 @@
 //
 
 #if os(OSX)
-    import Cocoa
+import Cocoa
+public typealias Application = NSApplication
 #elseif os(iOS)
-    import UIKit
+import UIKit
+public typealias Application = UIApplication
+#endif
 
-extension UIApplication {
+extension Application {
     
     public static func showNetworkIndicator() {
-        DispatchQueue.main.async {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        }
+        #if os(OSX)
+        
+        #elseif os(iOS)
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            }
+        #endif
     }
     
     public static func hideNetworkIndicator() {
-        DispatchQueue.main.async {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }
+        #if os(OSX)
+        
+        #elseif os(iOS)
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }
+        #endif
+        
     }
     
     public static var appVersion: String {
@@ -51,6 +63,4 @@ extension UIApplication {
         }
         return [:]
     }
-    
 }
-#endif

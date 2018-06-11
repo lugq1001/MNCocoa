@@ -6,7 +6,7 @@ github "krzyzanowskim/CryptoSwift"
 github "nvzqz/FileKit"
 
 # https://github.com/gavinbunney/Toucan
-github "gavinbunney/Toucan"
+# github "gavinbunney/Toucan"
 
 # https://github.com/onevcat/Kingfisher/wiki/Installation-Guide
 github "onevcat/Kingfisher" ~> 4.0

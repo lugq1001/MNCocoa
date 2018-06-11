@@ -10,8 +10,8 @@ import UIKit
 
 public struct MNCocoa {
 
-    public static func setup() {
-        print("📦📦MNCocoa(\(UIApplication.appVersion)) setup")
+    public static var ver: String {
+        return UIApplication.appVersion
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  Image.swift
+//  ImageExtensions.swift
 //  NextCont
 //
 //  Created by 陆广庆 on 2017/4/22.

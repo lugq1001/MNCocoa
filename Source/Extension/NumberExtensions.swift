@@ -1,5 +1,5 @@
 //
-//  Number+.swift
+//  NumberExtensions.swift
 //  MNCocoa
 //
 //  Created by Ayukey on 2018/6/10.

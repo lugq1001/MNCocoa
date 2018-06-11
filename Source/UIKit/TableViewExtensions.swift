@@ -1,5 +1,5 @@
 //
-//  ScrollView+.swift
+//  TableViewExtensions.swift
 //  MNCocoa
 //
 //  Created by Ayukey on 2018/6/10.
@@ -17,5 +17,3 @@ extension UITableView {
     }
 }
 #endif
-
-

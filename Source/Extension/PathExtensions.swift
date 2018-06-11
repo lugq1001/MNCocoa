@@ -1,5 +1,5 @@
 //
-//  Path.swift
+//  PathExtensions.swift
 //  MNCocoa
 //
 //  Created by 陆广庆 on 2017/12/20.

@@ -1,5 +1,5 @@
 //
-//  MNApplication.swift
+//  Application.swift
 //  NextCont
 //
 //  Created by 陆广庆 on 2017/5/8.
@@ -10,6 +10,22 @@
     import Cocoa
 #elseif os(iOS)
     import UIKit
+
+extension UIApplication {
+    
+    public static func showNetworkIndicator() {
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        }
+    }
+    
+    public static func hideNetworkIndicator() {
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
+    }
+    
+}
 #endif
 
 public struct MNApplication {

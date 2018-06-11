@@ -13,6 +13,7 @@
 		26CF706F20CD059500C7C818 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706E20CD059500C7C818 /* ArrayExtensions.swift */; };
 		26CF707120CD067300C7C818 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707020CD067300C7C818 /* NumberExtensions.swift */; };
 		26CF707320CD08D800C7C818 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707220CD08D800C7C818 /* SequenceExtensions.swift */; };
+		310A26F420CE586600C46B2C /* MNCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310A26F320CE586600C46B2C /* MNCocoa.swift */; };
 		31A74C5A20B4048600581F20 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A74C5920B4048600581F20 /* ViewExtensions.swift */; };
 		31CEAB64208723970018703F /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB55208723970018703F /* ImageExtensions.swift */; };
 		31CEAB65208723970018703F /* PathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB56208723970018703F /* PathExtensions.swift */; };
@@ -34,6 +35,7 @@
 		26CF706E20CD059500C7C818 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		26CF707020CD067300C7C818 /* NumberExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtensions.swift; sourceTree = "<group>"; };
 		26CF707220CD08D800C7C818 /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
+		310A26F320CE586600C46B2C /* MNCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCocoa.swift; sourceTree = "<group>"; };
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		31A74C5920B4048600581F20 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 		31CEAB52208723970018703F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				310A26F320CE586600C46B2C /* MNCocoa.swift */,
 				31CEAB54208723970018703F /* Extension */,
 				31CEAB57208723970018703F /* Util */,
 				31CEAB5A208723970018703F /* UIKit */,
@@ -235,6 +238,7 @@
 			files = (
 				31CEAB6B208723970018703F /* DateExtensions.swift in Sources */,
 				26CF706B20CD040F00C7C818 /* CollectionExtensions.swift in Sources */,
+				310A26F420CE586600C46B2C /* MNCocoa.swift in Sources */,
 				31CEAB6C208723970018703F /* PrivacyAuthorize.swift in Sources */,
 				31CEAB65208723970018703F /* PathExtensions.swift in Sources */,
 				31CEAB66208723970018703F /* MNMimeType.swift in Sources */,

@@ -14,6 +14,25 @@
 		26CF707120CD067300C7C818 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707020CD067300C7C818 /* NumberExtensions.swift */; };
 		26CF707320CD08D800C7C818 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707220CD08D800C7C818 /* SequenceExtensions.swift */; };
 		310A26F420CE586600C46B2C /* MNCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310A26F320CE586600C46B2C /* MNCocoa.swift */; };
+		317C1E6E20D070A700726897 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5F208723970018703F /* DateExtensions.swift */; };
+		317C1E6F20D070A700726897 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706A20CD040F00C7C818 /* CollectionExtensions.swift */; };
+		317C1E7020D070A700726897 /* MNCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310A26F320CE586600C46B2C /* MNCocoa.swift */; };
+		317C1E7120D070A700726897 /* PrivacyAuthorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB61208723970018703F /* PrivacyAuthorize.swift */; };
+		317C1E7220D070A700726897 /* PathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB56208723970018703F /* PathExtensions.swift */; };
+		317C1E7320D070A700726897 /* MNMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB58208723970018703F /* MNMimeType.swift */; };
+		317C1E7420D070A700726897 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706C20CD046300C7C818 /* DictionaryExtensions.swift */; };
+		317C1E7520D070A700726897 /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5B208723970018703F /* WidgetUtils.swift */; };
+		317C1E7620D070A700726897 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5E208723970018703F /* Application.swift */; };
+		317C1E7720D070A700726897 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706820CD034F00C7C818 /* TableViewExtensions.swift */; };
+		317C1E7820D070A700726897 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E095AB20CC10B30030C78E /* ViewControllerExtensions.swift */; };
+		317C1E7920D070A700726897 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707220CD08D800C7C818 /* SequenceExtensions.swift */; };
+		317C1E7A20D070A700726897 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB55208723970018703F /* ImageExtensions.swift */; };
+		317C1E7B20D070A700726897 /* MNMimeType+Resolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB59208723970018703F /* MNMimeType+Resolve.swift */; };
+		317C1E7C20D070A700726897 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF707020CD067300C7C818 /* NumberExtensions.swift */; };
+		317C1E7D20D070A700726897 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A74C5920B4048600581F20 /* ViewExtensions.swift */; };
+		317C1E7E20D070A700726897 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB5D208723970018703F /* StringExtensions.swift */; };
+		317C1E7F20D070A700726897 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706E20CD059500C7C818 /* ArrayExtensions.swift */; };
+		317C1E8220D070A700726897 /* MNCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CEAB53208723970018703F /* MNCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A74C5A20B4048600581F20 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A74C5920B4048600581F20 /* ViewExtensions.swift */; };
 		31CEAB64208723970018703F /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB55208723970018703F /* ImageExtensions.swift */; };
 		31CEAB65208723970018703F /* PathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEAB56208723970018703F /* PathExtensions.swift */; };
@@ -37,6 +56,8 @@
 		26CF707220CD08D800C7C818 /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		310A26F320CE586600C46B2C /* MNCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCocoa.swift; sourceTree = "<group>"; };
 		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		317C1E8820D070A700726897 /* MNCocoa_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		317C1E8920D070A900726897 /* MNCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MNCocoa copy-Info.plist"; path = "/Users/luguangqing/Code/iOS/mn-cocoa/MNCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
 		31A74C5920B4048600581F20 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CEAB53208723970018703F /* MNCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCocoa.h; sourceTree = "<group>"; };
@@ -54,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		317C1E8020D070A700726897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31C62C0F2020072900AEB0C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +98,7 @@
 				31CEAB52208723970018703F /* Source */,
 				313613A81FEA2BCC00031EA8 /* Products */,
 				310D5F95201F2EFE00559F7D /* Cartfile */,
+				317C1E8920D070A900726897 /* MNCocoa copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				31C62C132020072900AEB0C5 /* MNCocoa.framework */,
+				317C1E8820D070A700726897 /* MNCocoa_macos.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +173,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		317C1E8120D070A700726897 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C1E8220D070A700726897 /* MNCocoa.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31C62C102020072900AEB0C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,6 +192,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		317C1E6C20D070A700726897 /* MNCocoa_macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317C1E8520D070A700726897 /* Build configuration list for PBXNativeTarget "MNCocoa_macos" */;
+			buildPhases = (
+				317C1E6D20D070A700726897 /* Sources */,
+				317C1E8020D070A700726897 /* Frameworks */,
+				317C1E8120D070A700726897 /* Headers */,
+				317C1E8320D070A700726897 /* Resources */,
+				317C1E8420D070A700726897 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MNCocoa_macos;
+			productName = MNCocoa_iOS;
+			productReference = 317C1E8820D070A700726897 /* MNCocoa_macos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		31C62C122020072900AEB0C5 /* MNCocoa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31C62C1A2020072900AEB0C5 /* Build configuration list for PBXNativeTarget "MNCocoa" */;
@@ -182,6 +239,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "陆广庆";
 				TargetAttributes = {
+					317C1E6C20D070A700726897 = {
+						ProvisioningStyle = Automatic;
+					};
 					31C62C122020072900AEB0C5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -201,11 +261,19 @@
 			projectRoot = "";
 			targets = (
 				31C62C122020072900AEB0C5 /* MNCocoa */,
+				317C1E6C20D070A700726897 /* MNCocoa_macos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		317C1E8320D070A700726897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31C62C112020072900AEB0C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +284,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		317C1E8420D070A700726897 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		31A0BF12207273D9000886C1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +313,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		317C1E6D20D070A700726897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317C1E6E20D070A700726897 /* DateExtensions.swift in Sources */,
+				317C1E6F20D070A700726897 /* CollectionExtensions.swift in Sources */,
+				317C1E7020D070A700726897 /* MNCocoa.swift in Sources */,
+				317C1E7120D070A700726897 /* PrivacyAuthorize.swift in Sources */,
+				317C1E7220D070A700726897 /* PathExtensions.swift in Sources */,
+				317C1E7320D070A700726897 /* MNMimeType.swift in Sources */,
+				317C1E7420D070A700726897 /* DictionaryExtensions.swift in Sources */,
+				317C1E7520D070A700726897 /* WidgetUtils.swift in Sources */,
+				317C1E7620D070A700726897 /* Application.swift in Sources */,
+				317C1E7720D070A700726897 /* TableViewExtensions.swift in Sources */,
+				317C1E7820D070A700726897 /* ViewControllerExtensions.swift in Sources */,
+				317C1E7920D070A700726897 /* SequenceExtensions.swift in Sources */,
+				317C1E7A20D070A700726897 /* ImageExtensions.swift in Sources */,
+				317C1E7B20D070A700726897 /* MNMimeType+Resolve.swift in Sources */,
+				317C1E7C20D070A700726897 /* NumberExtensions.swift in Sources */,
+				317C1E7D20D070A700726897 /* ViewExtensions.swift in Sources */,
+				317C1E7E20D070A700726897 /* StringExtensions.swift in Sources */,
+				317C1E7F20D070A700726897 /* ArrayExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31C62C0E2020072900AEB0C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +484,75 @@
 			};
 			name = Release;
 		};
+		317C1E8620D070A700726897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RX6HV9CQ5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = No;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "MNCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		317C1E8720D070A700726897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RX6HV9CQ5K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = No;
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "MNCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lugq1001.MNCocoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
 		31C62C182020072900AEB0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,9 +564,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../NextCont_iOS/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -404,7 +577,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,9 +597,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../NextCont_iOS/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -439,7 +610,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -455,6 +626,15 @@
 			buildConfigurations = (
 				313613AD1FEA2BCC00031EA8 /* Debug */,
 				313613AE1FEA2BCC00031EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317C1E8520D070A700726897 /* Build configuration list for PBXNativeTarget "MNCocoa_macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317C1E8620D070A700726897 /* Debug */,
+				317C1E8720D070A700726897 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

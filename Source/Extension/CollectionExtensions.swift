@@ -6,6 +6,12 @@
 //  Copyright © 2016 SwifterSwift
 //
 
+#if os(OSX)
+import Cocoa
+#elseif os(iOS)
+import UIKit
+#endif
+
 // MARK: - Methods
 public extension Collection {
 

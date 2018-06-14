@@ -1,0 +1,11 @@
+framework module MNCocoa {
+  umbrella header "MNCocoa.h"
+
+  export *
+  module * { export * }
+}
+
+module MNCocoa.Swift {
+    header "MNCocoa-Swift.h"
+    requires objc
+}

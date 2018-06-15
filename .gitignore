@@ -6,7 +6,7 @@
 build/
 Carthage/
 DerivedData/
-DerivedData/
+Products/
 Pods/
 ## Various settings
 *.pbxuser

@@ -33,17 +33,19 @@ public extension Image {
 
     }
 
-    /*!
-     保持图片比例裁剪
-     */
+    /// 保持图片比例裁剪
+    ///
+    /// - Parameter size: CGSize
+    /// - Returns: Image
     public func clip(to size: CGSize) -> Image {
         let img = self.resize(to: size, mode: .aspectFit)
         return img
     }
 
-    /*!
-     不限比例裁剪至相应尺寸
-     */
+    /// 不限比例裁剪至相应尺寸
+    ///
+    /// - Parameter size: CGSize
+    /// - Returns: Image
     public func crop(to size: CGSize) -> Image {
         let img = self.resize(to: size)
         return img

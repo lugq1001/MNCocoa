@@ -37,8 +37,8 @@ public extension Image {
     ///
     /// - Parameter size: CGSize
     /// - Returns: Image
-    public func clip(to size: CGSize) -> Image {
-        let img = self.resize(to: size, mode: .aspectFit)
+    public func clip(to size: CGSize, byScale: Bool = false) -> Image {
+        let img = self.resize(to: size, mode: .aspectFit, byScale: byScale)
         return img
     }
 
@@ -51,16 +51,16 @@ public extension Image {
         return img
     }
 
-    fileprivate func resize(to size: CGSize, mode: ContentMode = .none) -> Image {
+    fileprivate func resize(to size: CGSize, mode: ContentMode = .none, byScale: Bool = false) -> Image {
         #if os(OSX)
             var finalSize = size
             if let scale = NSScreen.main?.backingScaleFactor {
-                finalSize = CGSize(width: size.width * scale, height: size.height * scale)
+                finalSize = CGSize(width: byScale ? size.width * scale : size.width, height: byScale ? size.height * scale : size.height)
             }
             let img = self.kf.resize(to: finalSize, for: mode)
             return img
         #elseif os(iOS)
-            let finalSize = CGSize(width: size.width * scale, height: size.height * UIScreen.main.scale)
+            let finalSize = CGSize(width: byScale ? size.width * scale : size.width, height: byScale ? size.height * scale : size.height)
             let img = self.kf.resize(to: finalSize, for: mode)
             return img
         #endif

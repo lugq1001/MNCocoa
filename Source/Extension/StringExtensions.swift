@@ -12,6 +12,7 @@
     import UIKit
 #endif
 import CryptoSwift
+import SwiftSoup
 
 public extension String {
 
@@ -87,5 +88,20 @@ public extension String {
         // https://github.com/Reza-Rg/Base64-Swift-Extension/blob/master/Base64.swift
         guard let decodedData = Data(base64Encoded: self) else { return nil }
         return String(data: decodedData, encoding: .utf8)
+    }
+    
+    var html2AttributedString: String? {
+        do {
+            let doc: Document = try SwiftSoup.parse(self)
+            return try doc.text()
+        } catch Exception.Error(_, _) {
+            return nil
+        } catch {
+            return nil
+        }
+    }
+    
+    public var html2String: String {
+        return html2AttributedString ?? ""
     }
 }

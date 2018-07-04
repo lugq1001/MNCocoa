@@ -10,9 +10,10 @@
     import Cocoa
 #elseif os(iOS)
     import UIKit
+    import SwiftSoup
 #endif
 import CryptoSwift
-import SwiftSoup
+
 
 public extension String {
 
@@ -90,6 +91,7 @@ public extension String {
         return String(data: decodedData, encoding: .utf8)
     }
     
+    #if os(iOS)
     var html2AttributedString: String? {
         do {
             let doc: Document = try SwiftSoup.parse(self)
@@ -104,4 +106,6 @@ public extension String {
     public var html2String: String {
         return html2AttributedString ?? ""
     }
+    #endif
+    
 }

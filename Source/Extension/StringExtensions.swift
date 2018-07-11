@@ -14,7 +14,6 @@
 #endif
 import CryptoSwift
 
-
 public extension String {
 
     public var intValue: Int? {

@@ -34,7 +34,6 @@ extension Application {
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
         #endif
-        
     }
     
     public static var appVersion: String {
@@ -63,4 +62,25 @@ extension Application {
         }
         return [:]
     }
+    
+    #if os(OSX)
+    
+    #elseif os(iOS)
+    class func topViewController() -> UIViewController {
+        return topViewController(UIApplication.shared.keyWindow!.rootViewController!)
+    }
+    
+    class func topViewController(_ rootViewController: UIViewController) -> UIViewController {
+        if let presented = rootViewController.presentedViewController {
+            if let navi = presented as? UINavigationController {
+                let lastViewController = navi.viewControllers.last
+                return topViewController(lastViewController!)
+            }
+            return topViewController(presented)
+        } else {
+            return rootViewController
+        }
+    }
+    #endif
+    
 }

@@ -55,7 +55,6 @@
 		26CF707020CD067300C7C818 /* NumberExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtensions.swift; sourceTree = "<group>"; };
 		26CF707220CD08D800C7C818 /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		310A26F320CE586600C46B2C /* MNCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCocoa.swift; sourceTree = "<group>"; };
-		310D5F95201F2EFE00559F7D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		317C1E8820D070A700726897 /* MNCocoaMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoaMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A74C5920B4048600581F20 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		31C62C132020072900AEB0C5 /* MNCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MNCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +97,6 @@
 			children = (
 				31CEAB52208723970018703F /* Source */,
 				313613A81FEA2BCC00031EA8 /* Products */,
-				310D5F95201F2EFE00559F7D /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,7 +299,7 @@
 		};
 		31A0BF12207273D9000886C1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (

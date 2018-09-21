@@ -26,7 +26,7 @@ public extension Image {
 
     static func find(name: String, inBundle bundle: Bundle) -> Image? {
         #if os(OSX)
-            return bundle.image(forResource: NSImage.Name(rawValue: name))
+            return bundle.image(forResource: name)
         #elseif os(iOS)
             return Image.init(named: name, in: bundle, compatibleWith: nil)
         #endif

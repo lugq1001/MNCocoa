@@ -121,7 +121,8 @@ extension Int {
 
     /// 文件大小 用于显示 如 12.32 M
     public var mnDisplayFileSize: String {
-        let doubleVal = Double(self)
+        let val = self < 0 ? 0 : self
+        let doubleVal = Double(val)
         let kb: Double = 1024
         let mb: Double = kb * 1024
         let gb: Double = mb * 1024

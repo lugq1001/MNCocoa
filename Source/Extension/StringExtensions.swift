@@ -90,6 +90,10 @@ public extension String {
         return String(data: decodedData, encoding: .utf8)
     }
     
+    public var fileMD5: String {
+        return YZYMD5().digestHexFromFile(self)
+    }
+    
     #if os(iOS)
     var html2AttributedString: String? {
         do {

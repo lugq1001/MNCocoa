@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260550EC21C2491400AB1E52 /* YZYMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260550EB21C2491400AB1E52 /* YZYMD5.swift */; };
+		260550ED21C24C1D00AB1E52 /* YZYMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260550EB21C2491400AB1E52 /* YZYMD5.swift */; };
 		26CF706920CD034F00C7C818 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706820CD034F00C7C818 /* TableViewExtensions.swift */; };
 		26CF706B20CD040F00C7C818 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706A20CD040F00C7C818 /* CollectionExtensions.swift */; };
 		26CF706D20CD046300C7C818 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706C20CD046300C7C818 /* DictionaryExtensions.swift */; };
@@ -48,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260550EB21C2491400AB1E52 /* YZYMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZYMD5.swift; sourceTree = "<group>"; };
 		26CF706820CD034F00C7C818 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
 		26CF706A20CD040F00C7C818 /* CollectionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		26CF706C20CD046300C7C818 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
@@ -92,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260550EA21C2491400AB1E52 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				260550EB21C2491400AB1E52 /* YZYMD5.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 		3136139D1FEA2BCC00031EA8 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +128,7 @@
 				31CEAB57208723970018703F /* Util */,
 				31CEAB5A208723970018703F /* UIKit */,
 				31CEAB60208723970018703F /* AppKit */,
+				260550EA21C2491400AB1E52 /* Libs */,
 				31F5B68620D1147E0021ED2A /* MNCocoa-Info.plist */,
 				31F5B68520D1147E0021ED2A /* MNCocoaMacOS-Info.plist */,
 				31CEAB53208723970018703F /* MNCocoa.h */,
@@ -310,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -331,6 +343,7 @@
 				317C1E7720D070A700726897 /* TableViewExtensions.swift in Sources */,
 				317C1E7820D070A700726897 /* ViewControllerExtensions.swift in Sources */,
 				317C1E7920D070A700726897 /* SequenceExtensions.swift in Sources */,
+				260550ED21C24C1D00AB1E52 /* YZYMD5.swift in Sources */,
 				317C1E7A20D070A700726897 /* ImageExtensions.swift in Sources */,
 				317C1E7B20D070A700726897 /* MNMimeType+Resolve.swift in Sources */,
 				317C1E7C20D070A700726897 /* NumberExtensions.swift in Sources */,
@@ -356,6 +369,7 @@
 				26CF706920CD034F00C7C818 /* TableViewExtensions.swift in Sources */,
 				31E095AC20CC10B30030C78E /* ViewControllerExtensions.swift in Sources */,
 				26CF707320CD08D800C7C818 /* SequenceExtensions.swift in Sources */,
+				260550EC21C2491400AB1E52 /* YZYMD5.swift in Sources */,
 				31CEAB64208723970018703F /* ImageExtensions.swift in Sources */,
 				31CEAB67208723970018703F /* MNMimeType+Resolve.swift in Sources */,
 				26CF707120CD067300C7C818 /* NumberExtensions.swift in Sources */,

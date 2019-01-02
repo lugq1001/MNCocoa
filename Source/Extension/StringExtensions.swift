@@ -91,7 +91,11 @@ public extension String {
     }
     
     public var fileMD5: String {
+        #if os(OSX)
+        return self
+        #elseif os(iOS)
         return YZYMD5().digestHexFromFile(self)
+        #endif
     }
     
     #if os(iOS)

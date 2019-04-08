@@ -22,7 +22,7 @@ private let kMimeTypeGoogleScript = "application/vnd.google-apps.script"
 public extension MNMimeType {
 
     /// 解析mimeType
-    public mutating func resolve() {
+    mutating func resolve() {
         let mime = mimeType.lowercased()
         for (k, v) in supportMimeTypes {
             if mime.hasPrefix(k) {

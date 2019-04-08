@@ -16,7 +16,7 @@ import FileKit
 public extension Path {
 
     /// 是否为文件
-    public var mnIsFile: Bool {
+    var mnIsFile: Bool {
         if let type = self.fileType {
             return type == .regular
         }
@@ -24,17 +24,17 @@ public extension Path {
     }
 
     /// 是否为隐藏路径
-    public var mnIsHidden: Bool {
+    var mnIsHidden: Bool {
         if self.fileName.hasPrefix(".") {
             return true
         }
-        if let mnIsHidden = try? url.resourceValues(forKeys: [.isHiddenKey]).isHidden {
+        if let mnIsHidden = ((try? url.resourceValues(forKeys: [.isHiddenKey]).isHidden) as Bool??) {
             return mnIsHidden ?? false
         }
         return false
     }
 
-    public func mnChildFiles(includeHide: Bool) -> [Path] {
+    func mnChildFiles(includeHide: Bool) -> [Path] {
         let children = self.children()
         var result: [Path] = []
         for c in children where c.mnIsFile {
@@ -46,14 +46,14 @@ public extension Path {
         return result
     }
 
-    public var mimeType: String {
+    var mimeType: String {
         if let mime = MNMimeType.ExtMapper[self.pathExtension] {
             return mime
         }
         return MNMimeType.UNKNOWN
     }
 
-    public var size: Int {
+    var size: Int {
         if let fileSize = self.attributes[FileAttributeKey.size] as? Int {
             return fileSize
         }
@@ -61,25 +61,25 @@ public extension Path {
     }
 
     /// 文件夹路径，不包含文件名
-    public var mnParentFolderPath: Path {
+    var mnParentFolderPath: Path {
         let folderPath = self.url.deletingLastPathComponent().path
         return Path(folderPath)
     }
 
     /// 文件修改标记
-    public var mnModifyTag: String {
+    var mnModifyTag: String {
         let date = self.modificationDate ?? Date()
         let tag = "\(self.size)-\(date.timeIntervalSince1970)"
         return tag
     }
 
     /// 文件大小 用于显示 如 12.32 M
-    public var mnDisplaySize: String {
+    var mnDisplaySize: String {
         let size = self.size
         return size.mnDisplayFileSize
     }
 
-    public var mnBookmarkData: Data? {
+    var mnBookmarkData: Data? {
         #if os(OSX)
             return try? url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
         #elseif os(iOS)

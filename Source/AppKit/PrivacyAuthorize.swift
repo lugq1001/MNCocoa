@@ -32,6 +32,8 @@ public class PrivacyAuthorize: NSObject {
             return .denied
         case .restricted: // 客户端未被授权访问媒体类型的硬件。用户不能更改客户端的状态，这可能是由于一些积极的限制，如父母控制的存在。
             return .denied
+        @unknown default:
+            return .denied
         }
     }
 }

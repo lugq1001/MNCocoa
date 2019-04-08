@@ -19,7 +19,7 @@ import Kingfisher
 
 public extension Image {
 
-    public func tint(color: Color) -> Image {
+    func tint(color: Color) -> Image {
         let img = self.kf.overlaying(with: color, fraction: CGFloat.leastNormalMagnitude)
         return img
     }
@@ -37,7 +37,7 @@ public extension Image {
     ///
     /// - Parameter size: CGSize
     /// - Returns: Image
-    public func clip(to size: CGSize, byScale: Bool = false) -> Image {
+    func clip(to size: CGSize, byScale: Bool = false) -> Image {
         let img = self.resize(to: size, mode: .aspectFit, byScale: byScale)
         return img
     }
@@ -46,7 +46,7 @@ public extension Image {
     ///
     /// - Parameter size: CGSize
     /// - Returns: Image
-    public func crop(to size: CGSize) -> Image {
+    func crop(to size: CGSize) -> Image {
         let img = self.resize(to: size)
         return img
     }

@@ -21,7 +21,7 @@ public extension Array {
 	///		["e", "l", "l", "o"].prepend("h") -> ["h", "e", "l", "l", "o"]
 	///
 	/// - Parameter newElement: element to insert.
-	public mutating func prepend(_ newElement: Element) {
+    mutating func prepend(_ newElement: Element) {
 		insert(newElement, at: 0)
 	}
 
@@ -33,7 +33,7 @@ public extension Array {
 	/// - Parameters:
 	///   - index: index of first element.
 	///   - otherIndex: index of other element.
-	public mutating func safeSwap(from index: Index, to otherIndex: Index) {
+    mutating func safeSwap(from index: Index, to otherIndex: Index) {
 		guard index != otherIndex,
 			startIndex..<endIndex ~= index,
 			startIndex..<endIndex ~= otherIndex else { return }
@@ -46,7 +46,7 @@ public extension Array {
 	///		[0, 2, 4, 7].keep( where: {$0 % 2 == 0}) -> [0, 2, 4]
 	///
 	/// - Parameter condition: condition to evaluate each element against.
-	public mutating func keep(while condition: (Element) throws -> Bool) rethrows -> [Element] {
+    mutating func keep(while condition: (Element) throws -> Bool) rethrows -> [Element] {
 		for (index, element) in lazy.enumerated() where try !condition(element) {
 			self = Array(self[startIndex..<index])
 			break
@@ -60,7 +60,7 @@ public extension Array {
 	///
 	/// - Parameter condition: condition to evaluate each element against.
 	/// - Returns: All elements up until condition evaluates to false.
-	public func take(while condition: (Element) throws -> Bool) rethrows -> [Element] {
+    func take(while condition: (Element) throws -> Bool) rethrows -> [Element] {
 		for (index, element) in lazy.enumerated() where try !condition(element) {
 			return Array(self[startIndex..<index])
 		}
@@ -73,7 +73,7 @@ public extension Array {
 	///
 	/// - Parameter condition: condition to evaluate each element against.
 	/// - Returns: All elements after the condition evaluates to false.
-	public func skip(while condition: (Element) throws-> Bool) rethrows -> [Element] {
+    func skip(while condition: (Element) throws-> Bool) rethrows -> [Element] {
 		for (index, element) in lazy.enumerated() where try !condition(element) {
 			return Array(self[index..<endIndex])
 		}
@@ -86,7 +86,7 @@ public extension Array {
 	///
 	/// - Parameter condition: condition to evaluate each element against.
 	/// - Returns: Two arrays, the first containing the elements for which the specified condition evaluates to true, the second containing the rest.
-	public func divided(by condition: (Element) throws -> Bool) rethrows -> (matching: [Element], nonMatching: [Element]) {
+    func divided(by condition: (Element) throws -> Bool) rethrows -> (matching: [Element], nonMatching: [Element]) {
 		//Inspired by: http://ruby-doc.org/core-2.5.0/Enumerable.html#method-i-partition
 		var matching = [Element]()
 		var nonMatching = [Element]()
@@ -108,7 +108,7 @@ public extension Array {
 	///
 	/// - Parameter places: Number of places that the array be rotated. If the value is positive the end becomes the start, if it negative it's that start becom the end.
 	/// - Returns: The new rotated array
-	public func rotated(by places: Int) -> [Element] {
+    func rotated(by places: Int) -> [Element] {
 		//Inspired by: https://ruby-doc.org/core-2.2.0/Array.html#method-i-rotate
 		guard places != 0 && places < count else { return self }
 		var array: [Element] = self
@@ -136,7 +136,7 @@ public extension Array {
 	/// - Parameter places: The number of places that the array should be rotated. If the value is positive the end becomes the start, if it negative it's that start become the end.
 	///
 	/// - Returns: self after rotating
-	public mutating func rotate(by places: Int) -> [Element] {
+    mutating func rotate(by places: Int) -> [Element] {
 		self = rotated(by: places)
 		return self
 	}
@@ -147,7 +147,7 @@ public extension Array {
 	///		[1, 2, 3, 4, 5].shuffle() // shuffles array
 	///
 	/// - Returns: self after shuffling
-	public mutating func shuffle() -> [Element] {
+    mutating func shuffle() -> [Element] {
 		// http://stackoverflow.com/questions/37843647/shuffle-array-swift-3
 		guard count > 1 else { return self }
 		for index in startIndex..<endIndex - 1 {
@@ -162,7 +162,7 @@ public extension Array {
 	///		[1, 2, 3, 4, 5].shuffled // return a shuffled version from given array e.g. [2, 4, 1, 3, 5].
 	///
 	/// - Returns: the array with its elements shuffled.
-	public func shuffled() -> [Element] {
+    func shuffled() -> [Element] {
 		var array = self
 		return array.shuffle()
 	}
@@ -172,7 +172,7 @@ public extension Array {
 	/// - Parameter path: Key path to sort. The key path type must be Comparable.
 	/// - Parameter ascending: If order must be ascending.
 	/// - Returns: Sorted array based on keyPath.
-	public func sorted<T: Comparable>(by path: KeyPath<Element, T?>, ascending: Bool = true) -> [Element] {
+    func sorted<T: Comparable>(by path: KeyPath<Element, T?>, ascending: Bool = true) -> [Element] {
 		return sorted(by: { (lhs, rhs) -> Bool in
 			guard let lhsValue = lhs[keyPath: path], let rhsValue = rhs[keyPath: path] else { return false }
 			if ascending {
@@ -187,7 +187,7 @@ public extension Array {
 	/// - Parameter path: Key path to sort. The key path type must be Comparable.
 	/// - Parameter ascending: If order must be ascending.
 	/// - Returns: Sorted array based on keyPath.
-	public func sorted<T: Comparable>(by path: KeyPath<Element, T>, ascending: Bool = true) -> [Element] {
+    func sorted<T: Comparable>(by path: KeyPath<Element, T>, ascending: Bool = true) -> [Element] {
 		return sorted(by: { (lhs, rhs) -> Bool in
 			if ascending {
 				return lhs[keyPath: path] < rhs[keyPath: path]
@@ -201,7 +201,7 @@ public extension Array {
 	///
 	/// - Parameter path: Key path to sort. The key path type must be Comparable.
 	/// - Parameter ascending: If order must be ascending.
-	public mutating func sort<T: Comparable>(by path: KeyPath<Element, T?>, ascending: Bool = true) -> [Element] {
+    mutating func sort<T: Comparable>(by path: KeyPath<Element, T?>, ascending: Bool = true) -> [Element] {
 		self = sorted(by: path, ascending: ascending)
 		return self
 	}
@@ -211,7 +211,7 @@ public extension Array {
 	///
 	/// - Parameter path: Key path to sort. The key path type must be Comparable.
 	/// - Parameter ascending: If order must be ascending.
-	public mutating func sort<T: Comparable>(by path: KeyPath<Element, T>, ascending: Bool = true) -> [Element] {
+    mutating func sort<T: Comparable>(by path: KeyPath<Element, T>, ascending: Bool = true) -> [Element] {
 		self = sorted(by: path, ascending: ascending)
 		return self
 	}
@@ -229,7 +229,7 @@ public extension Array where Element: Equatable {
 	///
 	/// - Parameter item: item to check.
 	/// - Returns: an array with all indices of the given item.
-	public func indices(of item: Element) -> [Index] {
+    func indices(of item: Element) -> [Index] {
 		var indices: [Index] = []
 		for index in startIndex..<endIndex where self[index] == item {
 			indices.append(index)
@@ -245,7 +245,7 @@ public extension Array where Element: Equatable {
 	///
 	/// - Parameter item: item to remove.
 	/// - Returns: self after removing all instances of item.
-	public mutating func removeAll(_ item: Element) -> [Element] {
+    mutating func removeAll(_ item: Element) -> [Element] {
 		self = filter { $0 != item }
 		return self
 	}
@@ -258,7 +258,7 @@ public extension Array where Element: Equatable {
 	///
 	/// - Parameter items: items to remove.
 	/// - Returns: self after removing all instances of all items in given array.
-	public mutating func removeAll(_ items: [Element]) -> [Element] {
+    mutating func removeAll(_ items: [Element]) -> [Element] {
 		guard !items.isEmpty else { return self }
 		self = filter { !items.contains($0) }
 		return self
@@ -269,7 +269,7 @@ public extension Array where Element: Equatable {
 	///		[1, 2, 2, 3, 4, 5].removeDuplicates() -> [1, 2, 3, 4, 5]
 	///		["h", "e", "l", "l", "o"]. removeDuplicates() -> ["h", "e", "l", "o"]
 	///
-	public mutating func removeDuplicates() {
+    mutating func removeDuplicates() {
 		// Thanks to https://github.com/sairamkotha for improving the method
 		self = reduce(into: [Element]()) {
 			if !$0.contains($1) {
@@ -285,7 +285,7 @@ public extension Array where Element: Equatable {
 	///
 	/// - Returns: an array of unique elements.
 	///
-	public func withoutDuplicates() -> [Element] {
+    func withoutDuplicates() -> [Element] {
 		// Thanks to https://github.com/sairamkotha for improving the method
 		return reduce(into: [Element]()) {
 			if !$0.contains($1) {

@@ -14,7 +14,7 @@
 
 public extension Date {
 
-    public static func formatUTC(_ utcString: String) -> Date {
+    static func formatUTC(_ utcString: String) -> Date {
         if utcString.isEmpty {
             return Date()
         }
@@ -26,18 +26,18 @@ public extension Date {
         return Date()
     }
 
-    public func format(_ format: String) -> String {
+    func format(_ format: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.string(from: self)
     }
 
-    public var millisSecondSince1970: Double {
+    var millisSecondSince1970: Double {
         let ms = self.timeIntervalSince1970
         return ms * 1000
     }
 
-    public var secondSince1970: Double {
+    var secondSince1970: Double {
         let s = self.timeIntervalSince1970
         return s
     }
@@ -51,7 +51,7 @@ public extension Date {
         return formatter
     }()
     
-    public var iso8601: String {
+    var iso8601: String {
         return Date.iso8601Formatter.string(from: self)
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		260550EC21C2491400AB1E52 /* YZYMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260550EB21C2491400AB1E52 /* YZYMD5.swift */; };
-		260550ED21C24C1D00AB1E52 /* YZYMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260550EB21C2491400AB1E52 /* YZYMD5.swift */; };
 		26CF706920CD034F00C7C818 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706820CD034F00C7C818 /* TableViewExtensions.swift */; };
 		26CF706B20CD040F00C7C818 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706A20CD040F00C7C818 /* CollectionExtensions.swift */; };
 		26CF706D20CD046300C7C818 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF706C20CD046300C7C818 /* DictionaryExtensions.swift */; };
@@ -309,7 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 		31A0BF12207273D9000886C1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -343,7 +342,6 @@
 				317C1E7720D070A700726897 /* TableViewExtensions.swift in Sources */,
 				317C1E7820D070A700726897 /* ViewControllerExtensions.swift in Sources */,
 				317C1E7920D070A700726897 /* SequenceExtensions.swift in Sources */,
-				260550ED21C24C1D00AB1E52 /* YZYMD5.swift in Sources */,
 				317C1E7A20D070A700726897 /* ImageExtensions.swift in Sources */,
 				317C1E7B20D070A700726897 /* MNMimeType+Resolve.swift in Sources */,
 				317C1E7C20D070A700726897 /* NumberExtensions.swift in Sources */,
